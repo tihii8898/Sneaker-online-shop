@@ -1,0 +1,11 @@
+7/10/2021:
+    - Huy design word
+    - Hoàn design Slide thuyết trình
+    - Minh Thuyết trình
+    - Về phần code Homepage ban đầu:
+        + Minh phần Header
+        + Huy phần Main 
+        + Hoàn phần Footer
+        => Sẽ có chia sẻ công việc nếu không kịp tiến độ
+    ==> Ngày họp tiếp theo: 10/10/2021
+        
