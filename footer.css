@@ -1,6 +1,8 @@
 .container_swap{
 
-    width: 400px;    
+    background-color: black;
+    overflow: hidden;
+    color: yellow;
     }
     
     .div_left{
@@ -23,8 +25,9 @@
     
     }
     .hf{
-        background-color: blue;
-        
+        overflow: hidden;
+        color: #000;
+        background-color: #ede734;
     }
     .hfleft{
         float: left;
@@ -33,11 +36,21 @@
     }
     .hfright
     {
-        background-color: black;
-        float: left;
-        width: 300px;
-        height: 50px;
-        text-align: center;
-        color: white;
-    }   
+        align-items: center;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: flex-start;
+        line-height: 50px;
+        min-height: 50px;
+        padding: 0 21px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: transform var(--gl-motion-duration-transform-press) var(--gl-motion-easing-transform-press),color var(--gl-motion-duration-textcolor) var(--gl-motion-easing-textcolor);
+        white-space: nowrap;
+        width: auto;
+    }
     
