@@ -8,4 +8,10 @@
         + Hoàn phần Footer
         => Sẽ có chia sẻ công việc nếu không kịp tiến độ
     ==> Ngày họp tiếp theo: 10/10/2021
-        
+    - Công việc cho tuần tiếp theo:
+        + Tiếp tục thiết kế phần homepage
+        + Học Javascript càng sớm càng tốt
+    - Báo cáo vào ngày 17/10/2021
+        + Tiến độ homepage
+        + Chia sẻ những cái học được
+    ==> Ngày họp tiếp theo: 17/10/2021
