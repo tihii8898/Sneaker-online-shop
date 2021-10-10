@@ -1,0 +1,64 @@
+body {
+    position: relative;
+}
+
+
+.main-container {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  
+
+}
+
+.items {
+    background-color: rgb(129, 180, 148);
+    border: solid black 1px;
+    height: 1000px;
+    
+    margin-right: 20px;
+   
+}
+
+.navigation_sale{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; /* dùng để hiển thị theo flex dọc */
+}
+.navigation_sale .nav {
+    
+    border: solid black 1px;
+    display:block;
+    height: 20%;
+    width: 50%;
+    margin: 20px;
+    box-sizing: border-box;
+
+}
+.navigation_sale .sale_off {
+    
+    border: solid black 1px;
+    display:block;
+    height: 20%;
+    width:50%;
+    margin: 20px;
+    box-sizing: border-box;
+
+}
+.product-container {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    
+}
+.product {
+    height: 100px ;
+    width: 100px;
+    border: solid black 1px;
+    
+}
