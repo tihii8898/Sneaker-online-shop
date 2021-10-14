@@ -9,7 +9,7 @@
         => Sẽ có chia sẻ công việc nếu không kịp tiến độ
     ==> Ngày họp tiếp theo: 10/10/2021
     - Công việc cho tuần tiếp theo:
-        + Huy hoàn thành demo homepage
-        + Hoàn tìm hiểu framework back-end (Django)
+        + Huy và mình Design phần homepage
+        + Hoàn tìm hiểu framework back-end (NodeJS, framework ExpressJS)
         + Minh tìm hiểu framework front-end ()
     ==> Ngày họp tiếp theo: 14/10/2021
