@@ -17,5 +17,7 @@
     - Tiếp tục hoàn thành demo homepage và expressJS
     - Tập thuyết trình 
     - Bắt tay vào code 
-    => Ngày họp tiếp theo: 14/10/2021
+    => Ngày họp tiếp theo: 17/10/2021
     
+17/10/2021: Demo phần trình bày báo cáo giữa kì
+    => 19/10/2021: Họp quyết định hướng đi tiếp tới 
