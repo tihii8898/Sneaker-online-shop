@@ -21,3 +21,10 @@
     
 17/10/2021: Demo phần trình bày báo cáo giữa kì
     => 19/10/2021: Họp quyết định hướng đi tiếp tới 
+19/10/2021: 
+   Công việc tuần này (18-24/10):
+        - Minh hoàn thành Header (Hoàn có thể giúp)
+        - Huy, Hoàn hoàn thành main
+        - Hoàn hoàn thành footer
+        - Đồng thời cũng học thêm JS 
+        => Tuần này phải hoàn thành Homepage(Nếu trường hợp chưa hoàn thành thì hạn chót là T3 tuần sau (26/10))
