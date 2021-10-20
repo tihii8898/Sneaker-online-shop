@@ -1,47 +1,55 @@
-.container_swap{
+.container{
 
     background-color: white;
     overflow: hidden;
     color: black;
-    }
-    
-    .div_left{
-    
-    width: 200px;
-    
-    float: left;
-    
-    text-align: left;
-    
-    }
-    
-    .div_right{
-    
-    width: 200px;
-    
-    float: left;
-    
-    text-align: left;
-    
-    }
-    .hf{
+}
+
+.hf{
+        display: block;
         overflow: hidden;
         color: #000;
         background-color: #ede734;
+        height: 100px;
     }
-    .hfleft{
+.DK{
+        display: block;
         float: left;
-        width: 300px;
-        text-align: right;
+        width: 500px;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
     }
-    .hfright
+.email
     {
+        display: block;
         float: left;
-        width: 300px ;
-        font-size: large;
-        text-align: right;
+        width: 500px ;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        background-color: black;
+        color: white;
     }
-    .box{
-        clear: left;
+label{
+    text-align: center;
+    font-size: medium;
+}
+.box{
+        display: block;
+        float: left;
+        margin-right: 15px;
+        width: 150px;
+        height: 100px;
+        padding: 1em;
     }
+input[type=text]{
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+footer{
+    clear: both;
+}
     
