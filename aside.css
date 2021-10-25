@@ -1,0 +1,16 @@
+.left,.right{
+    float: left;
+    width: 280px;
+    padding: 0;
+    margin-top: 10px;
+    border: 1px black;
+}
+
+.title{
+    border-bottom:1px solid #eee;
+    border-bottom-width: 1px ;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(238, 238, 238);}
+div{
+    display: block;
+}
