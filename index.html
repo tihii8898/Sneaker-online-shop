@@ -11,11 +11,113 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header-style.css">
+    <link rel="stylesheet" href="css/sign-up-style.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <script src="https://kit.fontawesome.com/fb7295659d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-
+        <!-- header logo -->
+        <div class="logo_img">
+           <a href="#">
+               <img src="img/logo/logo.png" alt="">
+            </a> 
+        </div>
+        <!-- MENU -->
+        <div class="menu-list">
+            <input type="checkbox" id="check">
+                <label class="menu-box" for="check">
+                    <i class="menu-btn fas fa-bars"></i>
+                </label> 
+            <div id="nav-list">
+             <!-----------------------NAV-------------------------------->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#for-men">For men</a></li>
+                    <li><a href="#for-women">For Women</a></li>
+                    <li><a href="#for-kid">For Kid</a></li>
+                    <li><a class="js-user" href="#"><i class="fas fa-user"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li class="search-js"><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </header>
+
+
+    
+    <div class="form-search">
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Search...">
+            <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="close-search">
+            <a href="#"><i class="fas fa-times"></a></i>
+        </div>
+    </div>
+
+
+
+
+    <div class="login">
+        <div class="login-form js_modal_form">
+            <div class="login-close close_js_btn">
+                <a href="#"><i class=" fas fa-times"></a></i>
+            </div>
+            <div class="login-header">
+                <img src="image\logo.png" alt="">
+            </div>
+            <div class="login-body">
+                <h2>YOUR ACCOUNT FOR EVERYTHING</h2>
+                <input class="account" type="email" placeholder="Email address">
+                <input class="account" type="password" placeholder="password">
+                <div class="check-account">
+                    <h5><input type="checkbox"> keep me signed in</h5>
+                    <a href="#"><h5>forgotten your password</h5></a>
+                    <div class="clear"></div>
+                </div>
+                <button class="login-btn">LOG IN</button>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------Sign-Up------------------------ -->
+    <div id="Sign-Up">
+        <div class="Sign-Up-form js_modal_form">
+            <div class="Sign-Up-close close_js_btn">
+                <a href="#"><i class=" fas fa-times"></a></i>
+            </div>
+            <div class="Sign-Up-header">
+                <img src="image\logo.png" alt="">
+            </div>
+            <div class="Sign-Up-body">
+                <h2>BECOME A H2M MEMBER</h2>
+                <h5>Create your H2M Member profile and get first access to the very best of H2M products, inspiration and community.</h5>
+                <input class="account" type="email" placeholder="Email address">
+                <input class="account" type="password" placeholder="password">
+                <input class="account" type="text" placeholder="Fist Name">
+                <input class="account" type="text" placeholder="Last Name">
+                <input class="account" type="text" placeholder="Date of Birth">
+                <input class="account" type="text" placeholder="Country">
+                <div class="check-container row">
+                    <label for="check-Male" class="check-sex-item col">
+                        <input type="radio" name= "gender"  id="check-Male">
+                        Male
+                    </label>
+                    <label for="check-Female" class="check-sex-item col">
+                        <input type="radio" name= "gender" id="check-Female">
+                        Female
+                    </label>
+                </div>
+                <button class="Sign-Up-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <div id="content" style="height: 1000px;">
+
+    </div>
 
     <main>
         <!-- <section class="home"></section> -->
@@ -140,9 +242,9 @@
             </div>
             
         </section>
-        <section class="Product">
+        <section class="Product" id="for-men">
             <div class="heading">
-                <span> For MEN - Dành cho nam</span>
+                <span > For MEN - Dành cho nam</span>
                 <a href="#" class="for-more">More >> </a>
             </div>
             <div class="container">
@@ -237,7 +339,7 @@
                
         </section>
 
-        <section class="Product">
+        <section class="Product" id="for-women">
             <div class="heading">
                 <span> For WOMEN - Dành cho nữ</span>
                 <a href="#" class="for-more">More >> </a>
@@ -334,7 +436,7 @@
                
         </section>
         
-        <section class="Product">
+        <section class="Product" id="for-kid">
             <div class="heading">
                 <span> For KID - Dành cho các bạn nhỏ</span>
                 <a href="#" class="for-more">More >> </a>
@@ -432,7 +534,30 @@
         </section>
     </main>
     <footer>
-    
+        <div class="hf">
+            <div class="DK">
+                <h1>Đăng kí thông tin nhận ưu đãi</h1></div>
+             <div class="email">
+                <label for="femail">Điền email</label>
+                <input type="text" id="femail" name="femail">
+                <button name="button" type="button">đăng kí</button>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="items">
+                <em>Hỗ trợ khách hàng</em><br>
+                <em>Chính sách vận chuyển</em>
+            </div>
+            <div class="items">
+                <em>Địa chỉ</em><br>
+                <em>123</em><br>
+                <em>456</em>
+            </div>
+            <div class="items">
+               <img src="download.png">
+            </div>
+        </div>
+        
     </footer>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
