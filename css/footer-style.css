@@ -1,0 +1,58 @@
+.footer-container{
+    background-color: white;
+    overflow: hidden;
+    color: black;
+}
+
+.hf{
+        display: flex;
+        overflow: hidden;
+        color: #000;
+        background-color: #ede734;
+        height: 100px;
+        flex-flow: row;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+
+    }
+.DK{
+        display: block;
+        float: left;
+        width: 500px;
+        margin-top: 10px;
+        
+}
+.email
+    {
+        display: block;
+        float: left;
+        width: 500px ;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+    }
+label{
+    text-align: center;
+    font-size: medium;
+}
+.footer-container .items{
+        display: block;
+        float: left;
+        margin-right: 15px;
+        width: 150px;
+        height: 100px;
+        padding: 1em;
+    }
+input[type=text]{
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+footer{
+    clear: both;
+}
+    
