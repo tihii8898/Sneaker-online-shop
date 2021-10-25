@@ -1,0 +1,80 @@
+
+
+.Men .heading {
+    text-align: center;
+    font-size: 3rem;
+}
+.Men .container {
+    grid: 25rem;
+    display: grid;
+     -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit]; 
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Men .container .box {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.Men .container .box .icons {
+    position: absolute;
+    height: 30rem;
+    width: 100%;
+    top: -105%;
+    left: 0;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(243, 243, 243, .8);
+    gap: 1rem;
+}
+.Men .container .box .icons:hover {
+    top: 0;
+}
+
+.Men .container .box .icons a {
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    color: #666;
+}
+.Men .container .box .icons a:hover {
+    background: #bac34e;
+    color: #fff;
+}
+
+.Men .container .box .image {
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Men .container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Men .container .box .content {
+    padding: 1.5rem;
+}
+.Men .container .box .content h3 {
+    font-size: 2rem;
+}
+
+.Men .container .box .content .price {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.Men .container .box .content .stars i {
+    font-size: 1.7rem;
+    color: #f9d806;
+}
