@@ -8,4 +8,14 @@
         + Hoàn phần Footer
         => Sẽ có chia sẻ công việc nếu không kịp tiến độ
     ==> Ngày họp tiếp theo: 10/10/2021
-        
+10/10/2021: Công việc cho tuần tiếp theo:
+        + Huy và mình Design phần homepage
+        + Hoàn tìm hiểu framework back-end (NodeJS, framework ExpressJS)
+        + Minh tìm hiểu framework front-end ()
+    ==> Ngày họp tiếp theo: 14/10/2021
+14/10/2021: 
+    - Tiếp tục hoàn thành demo homepage và expressJS
+    - Tập thuyết trình 
+    - Bắt tay vào code 
+    => Ngày họp tiếp theo: 14/10/2021
+    
