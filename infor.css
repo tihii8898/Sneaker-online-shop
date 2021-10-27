@@ -1,0 +1,10 @@
+.left, .right{
+    float: left;
+
+}
+.left{
+    width: 200px;
+}
+div{
+    display: block;
+}
