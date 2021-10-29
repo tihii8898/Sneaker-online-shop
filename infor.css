@@ -1,10 +1,35 @@
 .left, .right{
     float: left;
-
+    display: block;
+}
+.right{
+    background: rgb(94, 94, 104);
+    width: 1000px;
+    border-bottom: 10px;
+    padding: 20px;
 }
 .left{
-    width: 200px;
+    width: 300px;
 }
 div{
     display: block;
+}
+.property{
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+    display: flex;
+}
+label{
+    margin-right: 10px;
+    width: 15%;
+    text-align: right;
+}
+.icon{
+    float: left;
+}
+.content{
+    display: flex;
+    width: 100%;
+    float: left;
 }
