@@ -1,27 +1,27 @@
 var swiper = new Swiper('.sneaker-slider', {
     grabCursor: true,
-  centeredSlides: true,  
-  spaceBetween: 10,
-  loop:true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable:true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
+    centeredSlides: true,  
+    spaceBetween: 10,
+    loop:true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
     },
-    768: {
-      slidesPerView: 2,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
     },
-    1024: {
-      slidesPerView: 3,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
     },
-  },
   });
 
 
@@ -61,3 +61,10 @@ function Turn_off_form_search() {
 }
 search.addEventListener('click',show_form_search)
 close_search.addEventListener('click',Turn_off_form_search)
+
+/**
+ * 
+ * =>
+ * ===
+ * !==
+ */

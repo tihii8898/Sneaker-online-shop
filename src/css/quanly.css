@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+.container nav {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: #287bff;
+  border-left: 10px solid #287bff;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.container nav ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 50px 0 50px 0;
+}
+.container nav ul li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.container nav ul li:active, .container nav ul li.activated {
+  background-color: #fff;
+}
+.container nav ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+}
+.container nav ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+}
+.container nav ul li a .icon ion-icon {
+  font-size: 1.5em;
+  pointer-events: none;
+}
+.container nav ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  line-height: 60px;
+  height: 60px;
+  text-align: center;
+  white-space: nowrap;
+}
+.container nav ul li:active a, .container nav ul li.activated a {
+  transition: 0.25s;
+  color: #287bff;
+}
+.container nav ul li:active a::before, .container nav ul li.activated a::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px #fff;
+}
+.container nav ul li:active a::after, .container nav ul li.activated a::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px #fff;
+}
+.container .home {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  right: 50px;
+  display: none;
+}
+.container .home.open {
+  display: block;
+}
+.container .product {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  right: 0;
+  display: none;
+}
+.container .product.open {
+  display: block;
+}
+.container .order {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: violet;
+  right: 0;
+  display: none;
+}
+.container .order.open {
+  display: block;
+}
+.container .analytics {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  right: 0;
+  display: none;
+}
+.container .analytics.open {
+  display: block;
+}
+.container .finance {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  right: 0;
+  display: none;
+}
+.container .finance.open {
+  display: block;
+}
+.container .message {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  right: 0;
+  display: none;
+}
+.container .message.open {
+  display: block;
+}
+.container .feedback {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  right: 0;
+  display: none;
+}
+.container .feedback.open {
+  display: block;
+}
+.container .help {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  right: 0;
+  display: none;
+}
+.container .help.open {
+  display: block;
+}
+.container .setting {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  right: 0;
+  display: none;
+}
+.container .setting.open {
+  display: block;
+}
+.container .signout {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #123298;
+  right: 0;
+  display: none;
+}
+.container .signout.open {
+  display: block;
+}
+
+@media (max-width: 739px) {
+  .container nav {
+    width: 70px;
+  }
+  .container nav a::after, .container nav a::before {
+    z-index: -1;
+  }
+}
+
+/*# sourceMappingURL=quanly.css.map */
