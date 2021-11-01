@@ -14,6 +14,7 @@ function activeLink () {
     element.classList.add('open')
     
 }
-    list.forEach((item) => 
-        item.addEventListener('click',activeLink)
-    );
+    
+list.forEach((item) => 
+    item.addEventListener('click',activeLink)
+);
