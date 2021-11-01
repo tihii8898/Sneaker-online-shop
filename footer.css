@@ -31,10 +31,7 @@
         background-color: black;
         color: white;
     }
-label{
-    text-align: center;
-    font-size: medium;
-}
+
 .box{
         display: block;
         float: left;
@@ -43,12 +40,7 @@ label{
         height: 100px;
         padding: 1em;
     }
-input[type=text]{
-    width: 200px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
+
 footer{
     clear: both;
 }
