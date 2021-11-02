@@ -3,7 +3,7 @@
     display: block;
 }
 .right{
-    background: rgb(94, 94, 104);
+    background: rgb(255, 255, 255);
     width: 80%;
     height: 100%;
     border-bottom: 10px;
@@ -32,6 +32,7 @@ label{
 }
 .icon{
     float: left;
+    width: 30px
 }
 .content{
     display: flex;
@@ -47,7 +48,7 @@ label{
 .input-text{
     padding-right: 180px;
 }
-.item-head{
+.item-head-right,.item-head-left{
     width: 100%;
     float: left;
     margin: 15px 20px 0;
@@ -55,11 +56,23 @@ label{
     border-bottom: 1px solid #efefef;
     font-size: 30px;
 }
-.item-body{
+.item-head-right{
+    margin-bottom: 10px;
+}
+.item-body-right{
+    border:2px solid black
+}
+.item-body-left{
     margin: 10px;
     padding: 20px;
     float: left;
     margin-top: 50px;
+}
+.item-body-right{
+    margin: 10px;
+    padding-top: 50px;
+    float: left;
+    height: 88.5%;
 }
 ul{
     list-style-type: none;
@@ -71,4 +84,13 @@ a{
 ul li{
     margin: 0;
     padding-bottom: 20px;
+}
+.tk-btn-submit{
+    border-radius: 1px;
+    background-color: blue;
+    width: 180px;
+    line-height: 50px;
+    float: left;
+    text-align: center;
+    color: white;
 }
