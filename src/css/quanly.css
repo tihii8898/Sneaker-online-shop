@@ -113,72 +113,50 @@ html {
   padding: 20px;
   background-color: #dfe8eb;
 }
-.container .nav-info .home.open .banner {
-  height: 320px;
-  background-image: url("/img/logo/banner.png");
-  background-repeat: repeat;
-}
 .container .nav-info .home.open .today {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.container .nav-info .home.open .today .items {
+  padding: 20px;
+  position: relative;
+  background: #fff;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
 }
-.container .nav-info .home.open .today .view {
-  background-color: #fff;
-  height: 100px;
-  min-width: 200px;
-  max-width: 200px;
-  flex: 1;
-  border: solid black 1px;
-  margin-right: 10px;
-  border-radius: 20px;
-  display: block;
-}
-.container .nav-info .home.open .today .view .title {
+.container .nav-info .home.open .today .items .numbers {
   position: relative;
-  left: 20px;
-  top: 5px;
-  font-size: 1.4em;
+  font-size: 2rem;
+  font-weight: bold;
 }
-.container .nav-info .home.open .today .view .icon {
-  padding-left: 30%;
-  font-size: 30px;
+.container .nav-info .home.open .today .items .title {
+  color: #999;
 }
-.container .nav-info .home.open .today .view .views {
-  font-size: 30px;
+.container .nav-info .home.open .today .items .icon {
+  font-size: 2.5rem;
+  color: #03a9f4;
 }
-.container .nav-info .home.open .today .sell {
-  background-color: #fff;
-  height: 100px;
-  min-width: 200px;
-  max-width: 200px;
-  flex: 1;
-  border: solid;
-  border: solid black 1px;
-  margin-right: 10px;
-  border-radius: 20px;
+.container .nav-info .home.open .today .items:hover {
+  box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.025);
 }
-.container .nav-info .home.open .today .today-feedback {
-  height: 100px;
-  background-color: #fff;
-  min-width: 200px;
-  max-width: 200px;
-  flex: 1;
-  border: solid;
-  border: solid black 1px;
-  margin-right: 10px;
-  border-radius: 20px;
+.container .nav-info .home.open .analysis {
+  position: relative;
+  display: grid;
+  width: 100%;
+  padding: 20px;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+  min-height: 200px;
 }
-.container .nav-info .home.open .today .top-product {
-  flex: 1;
-  background-color: #fff;
-  height: 100px;
-  min-width: 200px;
-  max-width: 200px;
-  border: solid;
-  border: solid black 1px;
-  margin-right: 10px;
+.container .nav-info .home.open .analysis .side {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.025);
   border-radius: 20px;
 }
 .container .nav-info .product {
@@ -272,7 +250,7 @@ html {
   display: block;
 }
 
-@media (max-width: 739px) {
+@media (max-width: 991px) {
   .container .nav {
     width: 70px;
   }
@@ -283,24 +261,11 @@ html {
   .container .nav-info {
     padding-left: 70px;
   }
-  .container .nav-info .home.open .banner {
-    background-repeat: no-repeat;
-    width: 100%;
+  .container .nav-info .home.open .analysis {
+    grid-template-columns: 1fr;
   }
   .container .nav-info .home.open .today {
-    flex-wrap: wrap;
-  }
-  .container .nav-info .home.open .today .view {
-    margin-top: 10px;
-  }
-  .container .nav-info .home.open .today .sell {
-    margin-top: 10px;
-  }
-  .container .nav-info .home.open .today .top-product {
-    margin-top: 10px;
-  }
-  .container .nav-info .home.open .today .today-feedback {
-    margin-top: 10px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
