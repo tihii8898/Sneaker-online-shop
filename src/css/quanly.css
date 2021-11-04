@@ -10,11 +10,11 @@ html {
 
 .container {
   position: relative;
-  width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-flow: row;
 }
-.container nav {
+.container .nav {
   position: fixed;
   width: 300px;
   height: 100%;
@@ -22,25 +22,26 @@ html {
   border-left: 10px solid #287bff;
   transition: 0.5s;
   overflow: hidden;
+  z-index: 3;
 }
-.container nav ul {
+.container .nav ul {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   margin: 50px 0 50px 0;
 }
-.container nav ul li {
+.container .nav ul li {
   position: relative;
   list-style: none;
   width: 100%;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-.container nav ul li:active, .container nav ul li.activated {
+.container .nav ul li:active, .container .nav ul li.activated {
   background-color: #fff;
 }
-.container nav ul li a {
+.container .nav ul li a {
   position: relative;
   display: block;
   width: 100%;
@@ -48,7 +49,7 @@ html {
   text-decoration: none;
   color: #fff;
 }
-.container nav ul li a .icon {
+.container .nav ul li a .icon {
   position: relative;
   display: block;
   min-width: 60px;
@@ -56,11 +57,11 @@ html {
   line-height: 70px;
   text-align: center;
 }
-.container nav ul li a .icon ion-icon {
+.container .nav ul li a .icon ion-icon {
   font-size: 1.5em;
   pointer-events: none;
 }
-.container nav ul li a .title {
+.container .nav ul li a .title {
   position: relative;
   display: block;
   padding: 0 10px;
@@ -69,11 +70,11 @@ html {
   text-align: center;
   white-space: nowrap;
 }
-.container nav ul li:active a, .container nav ul li.activated a {
+.container .nav ul li:active a, .container .nav ul li.activated a {
   transition: 0.25s;
   color: #287bff;
 }
-.container nav ul li:active a::before, .container nav ul li.activated a::before {
+.container .nav ul li:active a::before, .container .nav ul li.activated a::before {
   content: "";
   position: absolute;
   top: -50px;
@@ -85,7 +86,7 @@ html {
   border-radius: 50%;
   box-shadow: 35px 35px 0 10px #fff;
 }
-.container nav ul li:active a::after, .container nav ul li.activated a::after {
+.container .nav ul li:active a::after, .container .nav ul li.activated a::after {
   content: "";
   position: absolute;
   bottom: -50px;
@@ -97,122 +98,179 @@ html {
   border-radius: 50%;
   box-shadow: 35px -35px 0 10px #fff;
 }
-.container .home {
+.container .nav-info {
   position: absolute;
-  height: 100px;
-  width: 100px;
-  background-color: red;
-  right: 50px;
+  padding-left: 300px;
+  width: 100%;
+  height: 100%;
+}
+.container .nav-info .home {
   display: none;
 }
-.container .home.open {
+.container .nav-info .home.open {
   display: block;
+  padding: 20px;
+  background-color: #dfe8eb;
 }
-.container .product {
-  position: absolute;
+.container .nav-info .home.open .banner {
+  height: 320px;
+  background-image: url("/img/logo/banner.png");
+  background-repeat: repeat;
+}
+.container .nav-info .home.open .today {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.container .nav-info .home.open .today .view {
+  background-color: #fff;
+  height: 100px;
+  width: 200px;
+  flex: 1;
+  border: solid black 1px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.container .nav-info .home.open .today .view .title {
+  position: relative;
+  left: 20px;
+  top: 5px;
+  font-size: 1.4rem;
+}
+.container .nav-info .home.open .today .view .icon {
+  padding-left: 30%;
+  font-size: 30px;
+}
+.container .nav-info .home.open .today .view .views {
+  font-size: 30px;
+}
+.container .nav-info .home.open .today .sell {
+  background-color: #fff;
+  height: 100px;
+  width: 200px;
+  flex: 1;
+  border: solid;
+  border: solid black 1px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.container .nav-info .home.open .today .today-feedback {
+  height: 100px;
+  background-color: #fff;
+  width: 200px;
+  flex: 1;
+  border: solid;
+  border: solid black 1px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.container .nav-info .home.open .today .top-product {
+  flex: 1;
+  background-color: #fff;
+  height: 100px;
+  width: 200px;
+  border: solid;
+  border: solid black 1px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.container .nav-info .product {
   height: 100px;
   width: 100px;
   background-color: blue;
   right: 0;
   display: none;
 }
-.container .product.open {
+.container .nav-info .product.open {
   display: block;
 }
-.container .order {
-  position: absolute;
+.container .nav-info .order {
   height: 100px;
   width: 100px;
   background-color: violet;
   right: 0;
   display: none;
 }
-.container .order.open {
+.container .nav-info .order.open {
   display: block;
 }
-.container .analytics {
-  position: absolute;
+.container .nav-info .analytics {
   height: 100px;
   width: 100px;
   background-color: yellow;
   right: 0;
   display: none;
 }
-.container .analytics.open {
+.container .nav-info .analytics.open {
   display: block;
 }
-.container .finance {
-  position: absolute;
+.container .nav-info .finance {
   height: 100px;
   width: 100px;
   background-color: green;
   right: 0;
   display: none;
 }
-.container .finance.open {
+.container .nav-info .finance.open {
   display: block;
 }
-.container .message {
-  position: absolute;
+.container .nav-info .message {
   height: 100px;
   width: 100px;
   background-color: purple;
   right: 0;
   display: none;
 }
-.container .message.open {
+.container .nav-info .message.open {
   display: block;
 }
-.container .feedback {
-  position: absolute;
+.container .nav-info .feedback {
   height: 100px;
   width: 100px;
   background-color: black;
   right: 0;
   display: none;
 }
-.container .feedback.open {
+.container .nav-info .feedback.open {
   display: block;
 }
-.container .help {
-  position: absolute;
+.container .nav-info .help {
   height: 100px;
   width: 100px;
   background-color: orange;
   right: 0;
   display: none;
 }
-.container .help.open {
+.container .nav-info .help.open {
   display: block;
 }
-.container .setting {
-  position: absolute;
+.container .nav-info .setting {
   height: 100px;
   width: 100px;
   background-color: gray;
   right: 0;
   display: none;
 }
-.container .setting.open {
+.container .nav-info .setting.open {
   display: block;
 }
-.container .signout {
-  position: absolute;
+.container .nav-info .signout {
   height: 100px;
   width: 100px;
   background-color: #123298;
   right: 0;
   display: none;
 }
-.container .signout.open {
+.container .nav-info .signout.open {
   display: block;
 }
 
 @media (max-width: 739px) {
-  .container nav {
+  .container .nav {
     width: 70px;
   }
-  .container nav a::after, .container nav a::before {
+  .container .nav a::after, .container .nav a::before {
     z-index: -1;
   }
 }

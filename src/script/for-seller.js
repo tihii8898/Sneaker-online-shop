@@ -1,5 +1,5 @@
-let list = document.querySelectorAll('nav li');
-let clear = document.querySelectorAll('.a')
+let list = document.querySelectorAll('.nav li');
+let clear = document.querySelectorAll('.left-nav')
 
 
 function activeLink () {
