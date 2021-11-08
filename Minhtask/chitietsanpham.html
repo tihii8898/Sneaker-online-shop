@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <!-- link font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Use swiper-bundle-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header-style.css">
+    <!-- <link rel="stylesheet" href="css/style_of_sign_up.css"> -->
+    <link rel="stylesheet" href="css/style-content.css">
+    <script src="https://kit.fontawesome.com/fb7295659d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/chitietsanpham.css">
+    <link rel="stylesheet" href="img/single-product/">
+</head>
+<body>
+    <header>
+        <!-- header logo -->
+        <div class="logo_img">
+           <a href="http://127.0.0.1:5501/index.html">
+               <img src="img/logo/logo.png" alt="">
+            </a> 
+        </div>
+        <!-- MENU -->
+        <div class="menu-list">
+            <input type="checkbox" id="check">
+                <label class="menu-box" for="check">
+                    <i class="menu-btn fas fa-bars"></i>
+                </label> 
+            <div id="nav-list">
+             <!-----------------------NAV-------------------------------->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#popular-sneaker">Sale</a></li>
+                    <li><a href="#for-men">For men</a></li>
+                    <li><a href="#for-women">For Women</a></li>
+                    <li><a href="#for-kid">For Kid</a></li>
+                    <li><a class="js-user" href="#"><i class="fas fa-user"></i></a></li>
+                    <li class="cart-js"><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li class="search-js"><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="form-search">
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Search...">
+            <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="close-search">
+            <a href="#"><i class="fas fa-times"></a></i>
+        </div>
+    </div>
+
+    <div class="login">
+        <div class="login-form js_modal_form">
+            <div class="login-close close_js_btn">
+                <a href="#"><i class=" fas fa-times"></a></i>
+            </div>
+            <div class="login-header">
+                <img src="img/logo/logo.png" alt="">
+            </div>
+            <div class="login-body">
+                <h2>YOUR ACCOUNT FOR EVERYTHING</h2>
+                <input class="account" type="email" placeholder="Email address">
+                <input class="account" type="password" placeholder="password">
+                <div class="check-account">
+                    <h5><input type="checkbox"> keep me signed in</h5>
+                    <a href="#"><h5>forgotten your password</h5></a>
+                    <div class="clear"></div>
+                </div>
+                <button class="login-btn">LOG IN</button>
+                <div class="check-no-have-acount">
+                    Not a member? 
+                    <a href="#" class="js-open-sig-up">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------Sign-Up------------------------ -->
+    <div class="Sign-Up" >
+        <div class="Sign-Up-form js_modal_form_sig_up">
+            <div class="Sign-Up-close close_js_btn_sig_up">
+                <a href="#"><i class=" fas fa-times"></a></i>
+            </div>
+            <div class="Sign-Up-header">
+                <img src="/img/logo/logo.png" alt="">
+            </div>
+            <div class="Sign-Up-body">
+                <h2>BECOME A H2M MEMBER</h2>
+                <h3>Create your H2M Member profile and get first access to the very best of H2M products, inspiration and community.</h3>
+                <input class="account" type="text" placeholder="Full Name">
+                <input class="account" type="email" placeholder="Email address">
+                <input class="account" type="password" placeholder="password">
+                <input class="account" type="text" placeholder="Date of Birth">
+                <div class="check-container row">
+                    <label for="check-Male" class="check-sex-item col">
+                        <input type="radio" name= "gender"  id="check-Male">
+                        Male
+                    </label>
+                    <label for="check-Female" class="check-sex-item col">
+                        <input type="radio" name= "gender" id="check-Female">
+                        Female
+                    </label>
+                </div>
+                <button class="Sign-Up-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart-container js-open-cart">
+        <div class="cart-close js-close-cart">
+            <a href="#"><i class=" fas fa-times"></a></i>
+        </div>
+        <div class="cart_list">
+            <table>
+            <thead>
+                <th>Sản phẩm </th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Chọn</th>
+            </thead>
+            <tbody class="body_of_Cart">
+                
+            </tbody> 
+        </table>
+            <div class="price-total">
+                <p>Tổng Tiền : <span>0</span><sub>đ</sub></p>
+            </div>
+            <button class= "buy_btn">Buy</button>
+        </div>
+    </div>
+    
+    <main>
+        <div class="small_container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="single-product/big-product.png" alt="" id="ProductIMG">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="single-product/small1.png" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="single-product/small2.png" class="small-img"alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="single-product/small3.png" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="single-product/small4.png" class="small-img" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="single-product/small5.png" class="small-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Home / Shoe</p>
+                    <h2>Giày Thể Thao Nam Biti's Hunter Street x VietMax | Bloomin' Central (1 ĐÔI GIÀY - 3 BIẾN THỂ) DSMH08400NAU (Phiên bản giới hạn Đồng xu cổ cho 999 đơn hàng đầu tiên)</h2>
+                    <h3>1,119,000<sup>đ</sup></h3>
+                    <select>
+                        <option>Select Size</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                    </select>
+                    <input type="number" value="1">
+                    <button>Buy It</button>
+                    <h3>BITI’S HUNTER STREET X VIETMAX | BLOOMIN' CENTRAL – 1 ĐÔI GIÀY – 3 BIẾN THỂ</h3>
+                    <br>
+                    <p>
+                        CẢM HỨNG TỰ HÀO TỪ MIỀN TRUNG - HOA TRONG ĐÁ
+                        <br>
+                        Trăm năm dải đất miền Trung
+                        <br>
+                        Từ trong sỏi đá đơm hoa phi thường
+                        <br>
+                        Miền Trung đó - khô cằn bên ngoài lại dung chứa tinh hoa di sản; khắc nghiệt cơ cực chỉ càng làm sáng tỏ cái đẹp con người.
+                        <br>
+                        Miền Trung đó - gợi mạch nguồn sáng tạo cho thiết kế cao cấp nhất - Biti's Hunter Street x VietMax | Bloomin' Central, đồng hành cùng nghệ sĩ Việt Max:
+                        <br>
+                        - 1 ĐÔI GIÀY – 3 BIẾN THỂ (3-in-1). Đa dạng biến tấu phong cách từ Low-Top đến Mid-Top & Mid-Top Reverse.
+                        <br>
+                         - LINH HOẠT BIẾN HÓA ỨNG DỤNG: Bên ngoài thô ráp nhưng mở ra gấm hoa thổ cẩm đa dạng sắc màu – như hồn người miền Trung từ cơ cực vẫn lãng mạn đến sắc sảo, tài hoa, độc đáo đáng tự hào.
+                        <br>
+                        - ĐỘC ĐÁO CẢM HỨNG VĂN HOÁ. Là vỏ trấu “thật”, lần đầu tiên được kết hợp vào đế, sần sùi nhưng đàn hồi, chịu lực cao – Như vốn con người sống lạc quan, không ngừng vươn lên
+                    </p>
+                </div>
+            </div>
+           
+        </div>
+    </main>
+
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/chitietsanpham.js"></script>
+</body>
+</html>

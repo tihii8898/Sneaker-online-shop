@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMH</title>
+    <!-- link font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Use swiper-bundle-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header-style.css">
+    <!-- <link rel="stylesheet" href="css/style_of_sign_up.css"> -->
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="stylesheet" href="css/style-content.css">
+    <script src="https://kit.fontawesome.com/fb7295659d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- header logo -->
+        <div class="logo_img">
+           <a href="http://127.0.0.1:5501/index.html">
+               <img src="img/logo/logo.png" alt="">
+            </a> 
+        </div>
+        <!-- MENU -->
+        <div class="menu-list">
+            <input type="checkbox" id="check">
+                <label class="menu-box" for="check">
+                    <i class="menu-btn fas fa-bars"></i>
+                </label> 
+            <div id="nav-list">
+             <!-----------------------NAV-------------------------------->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#popular-sneaker">Sale</a></li>
+                    <li><a href="#for-men">For men</a></li>
+                    <li><a href="#for-women">For Women</a></li>
+                    <li><a href="#for-kid">For Kid</a></li>
+                    <li><a class="js-user" href="#"><i class="fas fa-user"></i></a></li>
+                    <li class="cart-js"><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li class="search-js"><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="form-search">
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Search...">
+            <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="close-search">
+            <a href="#"><i class="fas fa-times"></a></i>
+        </div>
+    </div>
+
+    <div class="login">
+        <div class="login-form js_modal_form">
+            <div class="login-close close_js_btn">
+                <a href="#"><i class=" fas fa-times"></a></i>
+            </div>
+            <div class="login-header">
+                <img src="img/logo/logo.png" alt="">
+            </div>
+            <div class="login-body">
+                <h2>YOUR ACCOUNT FOR EVERYTHING</h2>
+                <input class="account" type="email" placeholder="Email address">
+                <input class="account" type="password" placeholder="password">
+                <div class="check-account">
+                    <h5><input type="checkbox"> keep me signed in</h5>
+                    <a href="#"><h5>forgotten your password</h5></a>
+                    <div class="clear"></div>
+                </div>
+                <button class="login-btn">LOG IN</button>
+                <div class="check-no-have-acount">
+                    Not a member? 
+                    <a href="#" class="js-open-sig-up">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------Sign-Up------------------------ -->
+    <div class="Sign-Up" >
+        <div class="Sign-Up-form js_modal_form_sig_up">
+            <div class="Sign-Up-close close_js_btn_sig_up">
+                <a href="#"><i class=" fas fa-times"></a></i>
+            </div>
+            <div class="Sign-Up-header">
+                <img src="img/logo/logo.png" alt="">
+            </div>
+            <div class="Sign-Up-body">
+                <h2>BECOME A H2M MEMBER</h2>
+                <h3>Create your H2M Member profile and get first access to the very best of H2M products, inspiration and community.</h3>
+                <input class="account" type="text" placeholder="Full Name">
+                <input class="account" type="email" placeholder="Email address">
+                <input class="account" type="password" placeholder="password">
+                <input class="account" type="text" placeholder="Date of Birth">
+                <div class="check-container row">
+                    <label for="check-Male" class="check-sex-item col">
+                        <input type="radio" name= "gender"  id="check-Male">
+                        Male
+                    </label>
+                    <label for="check-Female" class="check-sex-item col">
+                        <input type="radio" name= "gender" id="check-Female">
+                        Female
+                    </label>
+                </div>
+                <button class="Sign-Up-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart-container js-open-cart">
+        <div class="cart-close js-close-cart">
+            <a href="#"><i class=" fas fa-times"></a></i>
+        </div>
+        <div class="cart_list">
+            <table>
+            <thead>
+                <th>Sản phẩm </th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Chọn</th>
+            </thead>
+            <tbody class="body_of_Cart">
+                
+            </tbody> 
+        </table>
+            <div class="price-total">
+                <p>Tổng Tiền : <span>0</span><sub>đ</sub></p>
+            </div>
+            <button class= "buy_btn">Buy</button>
+        </div>
+    </div>
+
+
+
+
+    <div id="content">
+        <div class="slider"></div>
+    </div>
+
+    <main>
+        <!-- <section class="home"></section> -->
+        <section id="popular-sneaker">
+            <h1 class="heading">Sale</h1>
+            
+                <div class="swiper sneaker-slider">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide box">
+                            <img src="/img/popular/bitis_hunter_ht_8.jpg" alt="">
+                            <div class="content">
+                                <p>
+                                    <span class="fas fa-dollar-sign"></span> 1.699.000đ
+                                    <br>
+                                    <span class="name" title=" Bloomin' Central (1 ĐÔI GIÀY - 3 BIẾN THỂ) DSMH08400NAU (Phiên bản giới hạn Đồng xu cổ cho 999 đơn hàng đầu tiên)"> Giày Thể Thao Nam Biti's Hunter Street x VietMax </span>
+                            
+                                </p>
+                            </div>
+                            <a href="#">Chi tiết</a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <img src="/img/popular/dep-eva-phun-nam.jpg" alt="">
+                            <div class="content">
+                                <p>
+                                    <span class="fas fa-dollar-sign"></span> 300.000đ
+                                    <br>
+                                    <span class="name"> Dép Eva Phun Nam Biti's DEM010400TRG (Trắng)</span>
+                                    <br>
+                                    
+                                </p>
+                                
+                            </div>
+                            <a href="#">Chi tiết</a>
+                        </div>
+                        
+                        <div class="swiper-slide box">
+                            <img src="/img/popular/giay-the-thao-nam.jpg" alt="">
+                            <div class="content">
+                                <p>
+                                    <span class="fas fa-dollar-sign"></span> 625.000đ
+                                    <br>
+                                    <span class="name"> Giày Thể Thao Nam Bitis DSM074233KEM (Kem)</span>
+                            
+                                </p>
+                            </div>
+                            <a href="#">Chi tiết</a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <img src="/img/popular/dsm070633kem.jpg" alt="">
+                            <div class="content">
+                                <p>
+                                    <span class="fas fa-dollar-sign"></span> 615.000đ
+                                    <br>
+                                    <span class="name"> Giày Thể Thao Trung Cấp Nam Bitis DSM070633KEM (Kem)*</span>
+                                    <br>
+                                    
+                                </p>
+                            </div>
+                            <a href="#">Chi tiết</a>
+                        </div>
+                        
+                        <div class="swiper-slide box">
+                            <img src="/img/popular/dsgh00100hog.jpg" alt="">
+                            <div class="content">
+                                <p>
+                                    <span class="fas fa-dollar-sign"></span> 569.000đ
+                                    <br>
+                                    <span class="name"> Giày Thể Thao Bé Gái Bitis Hunter Junior DSGH00100HOG (Hồng)</span>
+                            
+                                </p>
+                            </div>
+                            <a href="#">Chi tiết</a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <img src="/img/popular/dsc_0016_7dcbe3d255e84324b3d5753ea31190b8_medium.jpg" alt="">
+                            <div class="content">
+                                <p>
+                                    <span class="fas fa-dollar-sign"></span> 699.000đ
+                                    <br>
+                                    <span class="name"> Giày Thể Thao Nam Biti’s Hunter Core Z Collection Stone DSMH06400DEN (Đen)</span>
+                            
+                                </p>
+                            </div>
+                            <a href="#">Chi tiết</a>
+                        </div>
+
+                        
+
+                        <div class="swiper-slide box">
+                            <img src="/img/popular/product1.jpg" alt="">
+                            <div class="content">
+                                <p>
+                                    <span class="fas fa-dollar-sign"></span> 450.000đ
+                                    <br>
+                                    <span class="name"> Giày thể thao Bitis HunterX</span>
+                            
+                                </p>
+                            </div>
+                            <a href="#">Chi tiết</a>
+                        </div>
+
+                        <div class="swiper-slide box">
+                            <img src="/img/popular/dsc_0009_8d59ab2d1c20497cb3c51e0321f47a0b_medium.jpg" alt="">
+                            <div class="content">
+                                <p>
+                                    <span class="fas fa-dollar-sign"></span> 699.000đ
+                                    <br>
+                                    <span class="name"> Giày Thể Thao Nữ Biti’s Hunter Core Z Collection Sea DSWH06400XDG (Xanh Dương)</span>
+                            
+                                </p>
+                            </div>
+                            <a href="#">Chi tiết</a>
+                        </div>
+                   
+                </div>
+                 </div>
+                 <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            
+        </section>
+        <section class="Product" id="for-men">
+            <div class="heading">
+                <span > For MEN - Dành cho nam</span>
+                <a href="#" class="for-more">More >> </a>
+            </div>
+            <div class="container">
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                            <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="img\single-product\big-product.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="Name-product" title="Giày Thể Thao Nam Biti's Hunter X Z MIDNIGHT BLACK MID - TOP DSMH06301DEN (Đen)">Giày Thể Thao Nam Biti's Hunter X Z MIDNIGHT BLACK MID - TOP DSMH06301DEN (Đen)</h3>
+                            <p class="price"> 1,119,000</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                            <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="/img/men/dsmh03801xdg_11c789b396e34801aa6c358df27834e1_large.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="Name-product" title="Giày Bóng Đá Nam Biti's Hunter Football DSMH03801XDG (Xanh Dương)">Giày Bóng Đá Nam Biti's Hunter Football DSMH03801XDG (Xanh Dương)</h3>
+                            <p class="price">650,000</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                            <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="/img/men//dsmh03801xmn40_1__442a58fcbdbb49d2ba59bae48bed3d51_large.jpg" alt="">
+                        </div>
+
+                        <div class="content">
+                            <h3 class="Name-product" title="Giày Bóng Đá Nam Biti's Hunter Football DSMH03801XMN (Xanh Mi Nơ)">Giày Bóng Đá Nam Biti's Hunter Football DSMH03801XMN (Xanh Mi Nơ)</h3>
+                            <p class="price">650,000</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                            <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="/img/men/dem010400den_6750815dac044c5d892acb47e67ea9cb_large.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="Name-product" title="Dép Eva Phun Nam Biti's DEM010400DEN (Đen)">Dép Eva Phun Nam Biti's DEM010400DEN (Đen)</h3>
+                            <p class="price">99,000</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               
+        </section>
+
+        <section class="Product" id="for-women">
+            <div class="heading">
+                <span> For WOMEN - Dành cho nữ</span>
+                <a href="#" class="for-more">More >> </a>
+            </div>
+            <div class="container">
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                            <a href="http://127.0.0.1:5501/chitietsanpham.html#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="/img/men/z2866520565802_427dabbb1087b7f3947554eeda777e41_bf936b3ddd934e4fb2ff96756a41add7_large.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="Name-product"  title="Giày Thể Thao Nữ Biti’s Hunter X Z MIDNIGHT BLACK MID - TOP DSMH06301DEN (Đen)">Giày Thể Thao Nữ Biti’s Hunter X Z MIDNIGHT BLACK MID - TOP DSMH06301DEN (Đen)</h3>
+                            <div class="price">1,119,000 đ</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                            <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="/img/women/06300tim__2__2f632211f87e4959b759ef9ebc38fd05_medium.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="Name-product"  title="Giày Thể Thao Nữ Biti’s Hunter X Z Collection InPurple DSWH06300TIM (Tím)">Giày Thể Thao Nữ Biti’s Hunter X Z Collection InPurple DSWH06300TIM (Tím)</h3>
+                            <div class="price">1,999,000 đ</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                            <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="/img/women/dsc_0009_8d59ab2d1c20497cb3c51e0321f47a0b_medium.jpg" alt="">
+                        </div>
+
+                        <div class="content">
+                            <h3 class="Name-product"  title="Giày Thể Thao Nữ Biti’s Hunter Core Z Collection Sea DSWH06400XDG (Xanh Dương)">Giày Thể Thao Nữ Biti’s Hunter Core Z Collection Sea DSWH06400XDG (Xanh Dương)</h3>
+                            <div class="price">699,000 đ</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                            <a href="http://127.0.0.1:5501/chitietsanpham.html#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="/img/women/kv1_fn_a30b3edc7a934ea58297c446e5cdebe7_medium.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="Name-product"  title="Giày Thể Thao Nữ Biti's Hunter Street x VietMax | Bloomin' Central (1 ĐÔI GIÀY - 3 BIẾN THỂ) DSWH08400NAU (Phiên bản giới hạn Đồng xu cổ cho 999 đơn hàng đầu tiên)">Giày Thể Thao Nữ Biti's Hunter Street x VietMax | Bloomin' Central (1 ĐÔI GIÀY - 3 BIẾN THỂ) DSWH08400NAU (Phiên bản giới hạn Đồng xu cổ cho 999 đơn hàng đầu tiên)</h3>
+                            <div class="price">1,999,000 đ</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               
+        </section>
+        
+        <section class="Product" id="for-kid">
+            <div class="heading">
+                <span> For KID - Dành cho các bạn nhỏ</span>
+                <a href="#" class="for-more">More >> </a>
+            </div>
+            <div class="container">
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                            <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="/img/kid/giay-phat-sang-cho-be-trai-be-gai-gh02_302fff8552234c81b4b5dd3b58207f2c_medium.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="Name-product"  title="Giày phát sáng cho bé trai bé gái 3 - 12 tuổi sạc USB thông minh kiểu dáng sneaker thể thao cá tính 7 chế độ đèn 4 chế độ chớp đèn LED độc đáo GH02">Giày phát sáng cho bé trai bé gái 3 - 12 tuổi sạc USB thông minh kiểu dáng sneaker thể thao cá tính</h3>
+                            <div class="price">310,000 đ</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                            <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="/img/kid/giay-the-thao-be-trai-be-gai-ge05-1_cc4cb981b9ca4f169522f192ae049d5d_medium.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="Name-product"  title="Giày thể thao cho bé trai và bé gái 1 - 12 tuổi kiểu dáng buộc dây năng động GE05">Giày thể thao cho bé trai và bé gái 1 - 12 tuổi kiểu dáng buộc dây năng động</h3>
+                            <div class="price">250,000 đ</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart"></a title="Thêm vào yêu thích">
+                            <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="/img/kid/giay-the-thao-be-trai-gh03_8bb7e0866fca4f92b604f4159b288bb0_medium.jpg" alt="">
+                        </div>
+
+                        <div class="content">
+                            <h3 class="Name-product"  title="Giày thể thao cho bé trai bé gái 3 - 12 tuổi da mềm quai dán thể thao và phong cách mẫu mới thu đông 2021 GH03">Giày thể thao cho bé trai bé gái 3 - 12 tuổi da mềm quai dán thể thao và phong cách mẫu mới thu đông 2021</h3>
+                            <div class="price">165,000 đ</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart add-cart" title ="Thêm vào giỏ"></a>
+                            <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                            <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                        </div>
+                        <div class="image">
+                            <img src="/img/kid/giay-the-thao-cho-be-trai-be-gai-gh01-1_27db401c28714c38aa36581e6527b7c5_medium.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3 class="Name-product"  title="Giày thể thao trẻ em đẹp thời trang cho bé trai bé gái 3 - 12 tuổi da mềm quai dán phong cách Hàn Quốc GH01">Giày thể thao trẻ em đẹp thời trang cho bé trai bé gái 3 - 12 tuổi da mềm quai dán phong cách Hàn Quốc</h3>
+                            <div class="price">220,000 đ</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+        </section>
+    </main>
+    <footer>
+        <!-- <div class="footer-hf">
+            <div class="DK">
+                <h1>Đăng kí thông tin nhận ưu đãi</h1></div>
+             <div class="hf-email">
+                <label for="femail">Điền email</label>
+                <input type="text" id="femail" name="femail">
+                <button name="button" type="button">đăng kí</button>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="items-box">
+                <em>Hỗ trợ khách hàng</em><br>
+                <em>Chính sách vận chuyển</em>
+            </div>
+            <div class="items-box">
+                <em>Địa chỉ</em><br>
+                <em>123</em><br>
+                <em>456</em>
+            </div>
+            <div class="items-box">
+               <img src="download.png">
+            </div>
+        </div>   -->
+    </footer>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

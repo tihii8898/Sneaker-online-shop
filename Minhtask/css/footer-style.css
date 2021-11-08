@@ -1,0 +1,56 @@
+.footer-container{
+    background-color: white;
+    overflow: hidden;
+    color: black;
+}
+
+.footer-hf{
+        display: block;
+        overflow: hidden;
+        color: #000;
+        background-color: #ede734;
+        height: 100px;
+    }
+.DK{
+        display: block;
+        float: left;
+        width: 500px;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+.hf-email
+    {
+        display: block;
+        float: left;
+        width: 500px ;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+    }
+.hf-email label{
+    text-align: center;
+    font-size: medium;
+}
+.footer-container .items-box{
+        display: block;
+        float: left;
+        margin-right: 15px;
+        width: 150px;
+        height: 100px;
+        padding: 1em;
+    }
+.hf-email input[type=text]{
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clear: both;
+}
