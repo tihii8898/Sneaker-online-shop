@@ -7,3 +7,89 @@ div{
     border: 1px solid black;
     font-size: 50px;
 }
+.container {
+    grid: 25rem;
+    display: grid;
+    /* -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit]; */
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    margin: 50px;
+}
+.container .box {
+    position: relative;
+    background-color: #f3f3f3;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+.container .box .icons {
+    position: absolute;
+    height: 30rem;
+    width: 100%;
+    top: -105%;
+    left: 0;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+          justify-content: center;
+    
+    background: rgba(243, 243, 243, .8);
+    gap: 1rem;
+}
+.container .box:hover .icons {
+    top: 0;
+}
+.container .box .icons a {
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: #fff;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    color: #666;
+}
+.container .box .icons a:hover {
+    background: #21c41b;
+    color: #fff;
+}
+.container .box .image {
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+}
+.container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Product .container .box .content {
+    padding: 1.5rem;
+}
+.Product .container .box .content h3 {
+    font-size: 2rem;
+
+    height: 9rem;
+    
+    overflow: hidden;
+}
+
+.Product .container .box .content .price {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.Product .container .box .content .stars i {
+    font-size: 1.7rem;
+    color: #f9d806;
+    text-decoration: none;
+}
+.Product .more {
+    border: solid;
+    font-size: 3rem;
+    padding: 30px;
+    border-radius: 30px; 
+}
