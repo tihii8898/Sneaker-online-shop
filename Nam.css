@@ -6,16 +6,37 @@ div{
     padding: 10px;
     border: 1px solid black;
     font-size: 50px;
+}.right{
+    float: left;
+    margin-left: 100px;
 }
-
+.left{
+    float:left;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+.filter{
+    width: 200px;
+    padding:1px 10px 20px 20px;
+    margin: 1px 10px 20px 10px;
+    border-bottom: 1px solid black;
+}
+.name-filter{
+    margin-bottom: 10px;
+}
+.data{
+    padding-left: 10px;
+}
+input{
+    margin-bottom: 10px;
+}
 .container {
     grid: 25rem;
     display: grid;
     /* -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit]; */
-      grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
     gap: 1.5rem;
-    margin: 50px;
-    margin-top: 100px;
+    margin: 50px 10px 10px 50px;
 }
 .container .box {
     position: relative;
@@ -59,8 +80,8 @@ div{
     color: #fff;
 }
 .container .box .image {
-    height: 300px;
-    width: 300px;
+    width:fit-content;
+    height:fit-content ;
     overflow: hidden;
 }
 .container .box .image img{
