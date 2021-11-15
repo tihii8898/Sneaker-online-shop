@@ -20,9 +20,15 @@ div{
     padding:1px 10px 20px 20px;
     margin: 1px 10px 20px 10px;
     border-bottom: 1px solid black;
+    text-align: left;
 }
 .name-filter{
     margin-bottom: 10px;
+    border-bottom: 1px solid black;
+
+}
+.name-title{
+    margin-top: 10px;
 }
 .data{
     padding-left: 10px;
@@ -34,9 +40,9 @@ input{
     grid: 25rem;
     display: grid;
     /* -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit]; */
-      grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+      grid-template-columns: 30ch 30ch 30ch 30ch ;
     gap: 1.5rem;
-    margin: 50px 10px 10px 50px;
+    margin: auto;
 }
 .container .box {
     position: relative;
@@ -47,7 +53,7 @@ input{
 }
 .container .box .icons {
     position: absolute;
-    height: 19rem;
+    height: 17rem;
     width: 100%;
     top: -105%;
     left: 0;
@@ -65,7 +71,7 @@ input{
 .container .box:hover .icons {
     top: 0;
 }
-.container .box .icons a {
+.container .box .icons .fas {
     font-size: 2rem;
     height: 5rem;
     width: 5rem;
@@ -80,12 +86,10 @@ input{
     color: #fff;
 }
 .container .box .image {
-    width:fit-content;
-    height:fit-content ;
+    width:100%;
     overflow: hidden;
 }
 .container .box .image img{
-    height: 100%;
     width: 100%;
     object-fit: cover;
 }
