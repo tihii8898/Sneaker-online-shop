@@ -1,6 +1,10 @@
 div{
     display: block;
 }
+.content{
+    display: inline-block;
+    width: 100%;
+}
 .title-product{
     margin: 50px 20px 20px 20px;
     padding: 10px;
@@ -40,7 +44,7 @@ input{
     grid: 25rem;
     display: grid;
     /* -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit]; */
-      grid-template-columns: 30ch 30ch 30ch 30ch ;
+      grid-template-columns: 25ch 25ch 25ch 25ch ;
     gap: 1.5rem;
     margin: auto;
 }
