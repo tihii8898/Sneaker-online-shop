@@ -118,8 +118,16 @@
                         </div>
                     </div>
                     <div class="analysis">
-                            <div class="side chart"></div>
-                            <div class="side top-product"></div>
+                            <div class="side">
+                                <canvas id="myChart" ></canvas>
+                            </div>
+                            <div class="side shop-info">
+                                <div>Tên cửa hàng: H & M Shop</div>
+                                <div>Chủ sở hữu: Huy, Hoàn, Minh</div>
+                                <div>Ngày thành lập: 1/10/2021</div>
+                                <div>Địa chỉ: Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh.</div>
+
+                            </div>
                     </div>
                 <div class="left-nav product"></div>
                 <div class="left-nav order"></div>
@@ -139,5 +147,9 @@
 
     <!-- Script for nav -->
     <script src="./script/for-seller.js"></script>
+
+    <!-- Script chart-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <script src="./script/chart.js"></script>
 </body>
 </html>
