@@ -127,7 +127,7 @@ html {
             display: block;
             
             padding: 20px;
-            
+            height: fit-content;
             background-color: #dfe8eb;
                 & .today {
                     width: 100%;
@@ -170,9 +170,9 @@ html {
                     display: grid;
                     width: 100%;
                     padding: 20px;
-                    grid-template-columns: 2fr 1fr;
-                    grid-column: auto;
-                    grid-gap: 30px;
+                    grid-template-columns: 3fr 1fr;
+                    // grid-column: auto;
+                    grid-gap: 10px;
                     min-height: 200px;
 
                     & .side{
@@ -182,17 +182,55 @@ html {
                         width: 100%;
                         box-shadow: 0 7px 25px rgba(0, 0, 0, 0.025);
                         border-radius: 20px;
-
+                        
+                        &.chart{
+                            width:90%;
+                        }
 
                         &.shop-info {
                             display: flex;
                             justify-content: space-between;
                             flex-direction: column;
 
+                            & .line {
+                                & input {
+                                    visibility: hidden;
+                                }
+                                margin: 10px;
+
+                            }
+
+                            & #pen {
+                                align-self: center;
+                                width: fit-content;
+                                margin-top: 20px;
+                                padding: 10px;
+                                display: flex;
+                                cursor: pointer;
+                                border: solid 0.5px;
+                                border-radius: 10px;
+                                align-items: center;
+                                justify-content: center;
+                                
+                                ion-icon {
+                                    pointer-events: none;
+                                    margin-right: 5px;
+                                }
+                            }
+
+                            & #change-info {
+                                position: relative;
+                                top:-40px;
+                                align-self: center;
+                                width: fit-content;
+                                padding: 10px;
+                                visibility:hidden;
+                            }
                         }
+
                     }
                 }
-            }
+        }
             & .product {
                 height: 100px;
                 width: 100px;

@@ -111,6 +111,7 @@ html {
 .container .nav-info .home.open {
   display: block;
   padding: 20px;
+  height: fit-content;
   background-color: #dfe8eb;
 }
 .container .nav-info .home.open .today {
@@ -147,9 +148,8 @@ html {
   display: grid;
   width: 100%;
   padding: 20px;
-  grid-template-columns: 2fr 1fr;
-  grid-column: auto;
-  grid-gap: 30px;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 10px;
   min-height: 200px;
 }
 .container .nav-info .home.open .analysis .side {
@@ -160,10 +160,43 @@ html {
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.025);
   border-radius: 20px;
 }
+.container .nav-info .home.open .analysis .side.chart {
+  width: 90%;
+}
 .container .nav-info .home.open .analysis .side.shop-info {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+.container .nav-info .home.open .analysis .side.shop-info .line {
+  margin: 10px;
+}
+.container .nav-info .home.open .analysis .side.shop-info .line input {
+  visibility: hidden;
+}
+.container .nav-info .home.open .analysis .side.shop-info #pen {
+  align-self: center;
+  width: fit-content;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  border: solid 0.5px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.container .nav-info .home.open .analysis .side.shop-info #pen ion-icon {
+  pointer-events: none;
+  margin-right: 5px;
+}
+.container .nav-info .home.open .analysis .side.shop-info #change-info {
+  position: relative;
+  top: -40px;
+  align-self: center;
+  width: fit-content;
+  padding: 10px;
+  visibility: hidden;
 }
 .container .nav-info .product {
   height: 100px;

@@ -118,15 +118,35 @@
                         </div>
                     </div>
                     <div class="analysis">
-                            <div class="side">
+                            <div class="side chart">
                                 <canvas id="myChart" ></canvas>
                             </div>
                             <div class="side shop-info">
-                                <div>Tên cửa hàng: H & M Shop</div>
-                                <div>Chủ sở hữu: Huy, Hoàn, Minh</div>
-                                <div>Ngày thành lập: 1/10/2021</div>
-                                <div>Địa chỉ: Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh.</div>
-
+                                <div class="line">
+                                    <span>Tên của hàng: </span>
+                                    <label id="label name"></label>
+                                    <input type="text" name="" id="input name" placeholder="Tên cửa hàng">
+                                </div>
+                                <div class="line">
+                                    <span>Chủ sở hữu:</span>
+                                    <label id="label owner" ></label>
+                                    <input type="text" name="" id="input owner" placeholder="Chủ sở hữu">
+                                </div>
+                                <div class="line">
+                                    <span>Ngày thành lập: </span>
+                                    <label id="label founding"></label>
+                                    <input type="date" name="" id="input founding" >
+                                </div>
+                                <div class="line">
+                                    <span>Địa chỉ: </span>
+                                    <label id="label address"></label>
+                                    <input type="text" name="" id="input address" placeholder="Địa chỉ">
+                                </div>
+                                <span id="pen" title="Sửa">
+                                    <ion-icon name="create-outline"></ion-icon>
+                                    <span>Chỉnh sửa </span>
+                                </span>
+                                <button id="change-info">Thay đổi</button>
                             </div>
                     </div>
                 <div class="left-nav product"></div>
@@ -150,6 +170,6 @@
 
     <!-- Script chart-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
-    <script src="./script/chart.js"></script>
+    <script src="./script/analysis.js"></script>
 </body>
 </html>
