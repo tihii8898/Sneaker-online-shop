@@ -127,8 +127,8 @@ html {
             display: block;
             
             padding: 20px;
-            height: fit-content;
-            background-color: #dfe8eb;
+            height: 1000px;
+            background: linear-gradient(to right top, #65dfc9, #6cdbeb);
                 & .today {
                     width: 100%;
                     display: grid;
@@ -185,6 +185,7 @@ html {
                         
                         &.chart{
                             width:90%;
+                            padding-top:10%;
                         }
 
                         &.shop-info {
@@ -232,15 +233,34 @@ html {
                 }
         }
             & .product {
-                height: 100px;
-                width: 100px;
-                background-color: blue;
-                right: 0;
-                // visibility: hidden;
                 display:none;    
             }
             & .product.open {
+                padding: 10px;
                 display: block;
+                height: 1000px;
+                width: 100%;
+                background: #16A085;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                & .top-1{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    // background-color: #03a9f4;
+                    justify-items: center;
+                    & .box {
+                        height: fit-content;
+                        width: 250px;
+                        background-color: whitesmoke;
+                        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.025);
+
+                        & img { 
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
             }
             & .order {
                 height: 100px;
