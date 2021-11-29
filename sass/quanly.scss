@@ -244,7 +244,13 @@ html {
                 background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 */
                 background: linear-gradient(to right, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+                & span {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+
                 & .top-1{
+                    margin-top: 10px;
                     display: grid;
                     grid-template-columns: repeat(3,1fr);
                     // background-color: #03a9f4;
@@ -254,7 +260,7 @@ html {
                         width: 250px;
                         background-color: whitesmoke;
                         box-shadow: 0 7px 25px rgba(0, 0, 0, 0.025);
-
+                        padding: 10px;
                         & img { 
                             height: 100%;
                             width: 100%;

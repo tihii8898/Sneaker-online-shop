@@ -214,7 +214,12 @@ html {
   background: linear-gradient(to right, #F4D03F, #16A085);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.container .nav-info .product.open span {
+  font-size: 30px;
+  font-weight: bold;
+}
 .container .nav-info .product.open .top-1 {
+  margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -224,6 +229,7 @@ html {
   width: 250px;
   background-color: whitesmoke;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.025);
+  padding: 10px;
 }
 .container .nav-info .product.open .top-1 .box img {
   height: 100%;
