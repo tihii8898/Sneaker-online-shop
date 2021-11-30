@@ -245,6 +245,55 @@ html {
   font-size: 20px;
   font-weight: normal;
 }
+.container .nav-info .product.open #table {
+  margin-top: 40px;
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  align-self: center;
+}
+.container .nav-info .product.open #table table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #e1e5ee;
+  background-color: white;
+  text-align: left;
+  overflow: hidden;
+}
+.container .nav-info .product.open #table thead {
+  box-shadow: 0 5px 10px #e1e5ee;
+}
+.container .nav-info .product.open #table th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+.container .nav-info .product.open #table td {
+  padding: 1rem 2rem;
+}
+.container .nav-info .product.open #table td a {
+  text-decoration: none;
+  color: #2962ff;
+}
+.container .nav-info .product.open #table .status {
+  border-radius: 0.2rem;
+  background-color: red;
+  padding: 0.2rem 1rem;
+  text-align: center;
+}
+.container .nav-info .product.open #table .status-available {
+  background-color: #c8e6c9;
+  color: #388e3c;
+}
+.container .nav-info .product.open #table .status-sold-out {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+.container .nav-info .product.open #table .status-waiting {
+  background-color: #fff0c2;
+  color: #a68b00;
+}
 .container .nav-info .order {
   height: 100px;
   width: 100px;

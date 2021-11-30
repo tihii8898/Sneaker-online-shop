@@ -196,9 +196,55 @@
                             </div>
                         </div>
                     </div>
-                    <div class="table">
-                        <div class="left"></div>
-                        <div class="right"></div>
+                    <div id="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    
+                                    <th>Mã sản phẩm</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Ngày mở bán</th>
+                                    <th>Tình trạng kho</th>
+                                    <th>Doanh thu</th>
+                                    <th>Đang mở bán</th>
+                                </tr>
+                            </thead>
+                            <tbody id = 'tb-body'>
+                                <tr>
+                                    <td class="tr-code"><a href="#">1239asd</a></td>
+                                    <td class="tr-name">3</td>
+                                    <td class="tr-release">4</td>
+                                    <td class="status status-waiting">Chờ hàng</td>
+                                    <td class="tr-amount">123</td>
+                                    <td class="selling">
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td class="tr-code"><a href="#">1239asd</a></td>
+                                    <td class="tr-name">3</td>
+                                    <td class="tr-release">4</td>
+                                    <td class="status status-available">Còn hàng</td>
+                                    <td class="tr-amount">123</td>
+                                    <td class="tr-selling">
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td class="tr-code"><a href="#">1239asd</a></td>
+                                    <td class="tr-name">3</td>
+                                    <td class="tr-release">4</td>
+                                    <td class="status status-sold-out">Hết hàng</td>
+                                    <td class="tr-amount">123</td>
+                                    <td class="tr-selling">
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div class="left-nav order"></div>
@@ -222,5 +268,8 @@
     <!-- Script chart-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
     <script src="./script/analysis.js"></script>
+
+    <!-- Script product table-->
+    <script src="/src/script/product-session.js"></script>
 </body>
 </html>

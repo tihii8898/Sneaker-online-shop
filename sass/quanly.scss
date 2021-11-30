@@ -280,6 +280,62 @@ html {
                         }
                     }
                 }
+
+                & #table {
+                    margin-top: 40px;
+                    height: fit-content;
+                    width: fit-content;
+                    background-color:white;
+                    align-self: center;
+                    & table {
+                        border-collapse: collapse;
+                        box-shadow: 0 5px 10px $clr-gray300;
+                        background-color: white;
+                        text-align: left;
+                        overflow: hidden; 
+                    }
+
+                    & thead {
+                        box-shadow: 0 5px 10px $clr-gray300;
+                    }
+
+                    & th {
+                        padding: 1rem 2rem;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1rem;
+                        font-size: 0.7rem;
+                        font-weight: 900;
+                    }
+                    & td { 
+                        padding: 1rem 2rem;
+                        & a {
+                            text-decoration: none;
+                            color: $clr-link;
+                        }
+                    }
+                    & .status { 
+                        border-radius: $radius;
+                        background-color: red;
+                        padding: 0.2rem 1rem;
+                        text-align: center;
+                        &-available {
+                            background-color: $clr-available;
+                            color: $clr-available-font;
+                        }
+
+                        &-sold-out {
+                            background-color: $clr-sold-out;
+                            color: $clr-sold-out-font;
+                        }
+
+                        &-waiting {
+                            background-color: $clr-inventory;
+                            color: $clr-inventory-font;
+                        }
+                    }
+
+                }
+
             }
             & .order {
                 height: 100px;
