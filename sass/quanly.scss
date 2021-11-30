@@ -255,15 +255,28 @@ html {
                     grid-template-columns: repeat(3,1fr);
                     // background-color: #03a9f4;
                     justify-items: center;
+                    grid-gap: 10px;
                     & .box {
                         height: fit-content;
-                        width: 250px;
+                        width: 300px;
                         background-color: whitesmoke;
                         box-shadow: 0 7px 25px rgba(0, 0, 0, 0.025);
                         padding: 10px;
                         & img { 
                             height: 100%;
                             width: 100%;
+                        }
+
+                        & .about-img {
+                            & div {
+                                margin: 5px;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            & span {
+                                font-size: 20px;
+                                font-weight: normal;
+                            }
                         }
                     }
                 }

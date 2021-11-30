@@ -223,10 +223,11 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  grid-gap: 10px;
 }
 .container .nav-info .product.open .top-1 .box {
   height: fit-content;
-  width: 250px;
+  width: 300px;
   background-color: whitesmoke;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.025);
   padding: 10px;
@@ -234,6 +235,15 @@ html {
 .container .nav-info .product.open .top-1 .box img {
   height: 100%;
   width: 100%;
+}
+.container .nav-info .product.open .top-1 .box .about-img div {
+  margin: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container .nav-info .product.open .top-1 .box .about-img span {
+  font-size: 20px;
+  font-weight: normal;
 }
 .container .nav-info .order {
   height: 100px;
