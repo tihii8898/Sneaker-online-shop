@@ -238,7 +238,7 @@ html {
             & .product.open {
                 padding: 10px;
                 display: block;
-                height: 1000px;
+                height: fit-content;
                 width: 100%;
                 background: #16A085;  /* fallback for old browsers */
                 background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 */
@@ -308,6 +308,8 @@ html {
                     }
                     & td { 
                         padding: 1rem 2rem;
+                        width: fit-content;
+                        
                         & a {
                             text-decoration: none;
                             color: $clr-link;

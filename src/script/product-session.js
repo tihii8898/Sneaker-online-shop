@@ -2,15 +2,11 @@
 
 
 
-var menName = document.getElementById('name-top-1-men')
-var menEarn = document.getElementById('earn-top-1-men')
-var menDay = document.getElementById('day-top-1-men')
-var womenName = document.getElementById('name-top-1-women')
-var womenEarn = document.getElementById('earn-top-1-women')
-var womenDay = document.getElementById('day-top-1-women')
-var childName = document.getElementById('name-top-1-child')
-var childEarn = document.getElementById('earn-top-1-child')
-var childDay = document.getElementById('day-top-1-child')
+
+
+
+
+
 
 const Top1 = () => {
     menValue = {
@@ -28,12 +24,21 @@ const Top1 = () => {
         earn: 3000000,
         day: '1-11-2021'
     }
-
+    
+    var menName = document.getElementById('name-top-1-men')
+    var menEarn = document.getElementById('earn-top-1-men')
+    var menDay = document.getElementById('day-top-1-men')
+    var womenName = document.getElementById('name-top-1-women')
+    var womenEarn = document.getElementById('earn-top-1-women')
+    var womenDay = document.getElementById('day-top-1-women')
+    var childName = document.getElementById('name-top-1-child')
+    var childEarn = document.getElementById('earn-top-1-child')
+    var childDay = document.getElementById('day-top-1-child')
     //name
     menName.innerHTML  =`Mã sản phẩm: ${menValue.name}`
     womenName.innerText =`Mã sản phẩm: ${womenValue.name}`
     childName.innerText = `Mã sản phẩm: ${childValue.name}`
-
+    
     //earn
     menEarn.innerText = `Doanh thu:  ${menValue.earn} VND`
     womenEarn.innerText = `Doanh thu:   ${womenValue.earn} VND`
@@ -50,9 +55,57 @@ Top1()
 
 // table 
 
+var products = [
+    {   
+        code:'DSMH06301DEN',
+        name: 'Giày Thể Thao Nam Biti’s Hunter X Z MIDNIGHT BLACK MID - TOP DSMH06301DEN (Đen)',
+        dayRelease: '20-11-2021',
+        inStorage: 30,
+        waiting:false,
+        amount:10000000,
+        selling:true,
+    },
+    {
+        code:'DSMH03801XDG',
+        name: 'Giày Bóng Đá Nam Biti\'s Hunter Football DSMH03801XDG (Xanh Dương)',
+        dayRelease: '1-11-2021',
+        inStorage: 0,
+        waiting:false,
+        amount:650000,
+        selling:true,
+    },
+    {
+        code:'DSWH06400XDG',
+        name: 'Giày Thể Thao Nữ Biti’s Hunter Core Z Collection Sea DSWH06400XDG (Xanh Dương)',
+        dayRelease: '22-10-2021',
+        inStorage: 0,
+        waiting:true,
+        amount:699000,
+        selling:true,
+        
+    },
+    {
+        code:'DEM010400DEN',
+        name: 'Dép Eva Phun Nam Biti\'s DEM010400DEN (Đen)',
+        dayRelease: '18-11-2021',
+        inStorage: 300,
+        waiting:false,
+        amount:99000,
+        selling:true,
+    },
+    {
+        code:'DSWH08400NAU',
+        name: 'Giày Thể Thao Nữ Biti\'s Hunter Street x VietMax | Bloomin\' Central (1 ĐÔI GIÀY - 3 BIẾN THỂ) DSWH08400NAU (Phiên bản giới hạn Đồng xu cổ cho 999 đơn hàng đầu tiên)',
+        dayRelease: '30-10-2021',
+        inStorage: 90,
+        waiting:false,
+        amount:1999000,
+        selling:true,
+    }
 
+]
 
-const tableRow = () => {
+const tableRow = (item) => {
     let tr = document.createElement('tr')
 
     let codeRow = document.createElement('td')
@@ -65,7 +118,7 @@ const tableRow = () => {
     let list = [codeRow,nameRow,releaseRow,statusRow,amountRow,sellingRow]
 
     //code
-    let codeText = document.createTextNode('123')
+    let codeText = document.createTextNode(item.code)
     let code = document.createElement('a')
     code.href = '#'
     code.classList.add('tr-code')
@@ -73,23 +126,38 @@ const tableRow = () => {
     codeRow.appendChild(code)
 
     //name 
-    let nameText = document.createTextNode('bitis')
+    let nameText = document.createTextNode(item.name)
     nameRow.appendChild(nameText)
     nameRow.classList.add('tr-name')
 
     //release
-    let releaseText = document.createTextNode('20-11-2021')
+    let releaseText = document.createTextNode(item.dayRelease)
     releaseRow.appendChild(releaseText)
     releaseRow.classList.add('tr-release')
 
     //status
-    let statusText = document.createTextNode('Còn hàng')
-    statusRow.classList.add('status','status-available')
+    let statusText = null
+    statusRow.classList.add('status')
+    if (item.waiting){
+        statusText = document.createTextNode('Chờ hàng')
+        statusRow.classList.add('status-waiting')
+    }
+    else{
+        if (item.inStorage > 0 ){
+    
+            statusText = document.createTextNode('Còn hàng')
+            statusRow.classList.add('status-available')
+        }
+        else {
+            statusText = document.createTextNode('Hết hàng')
+            statusRow.classList.add('status-sold-out')
+        }
+    }
     statusRow.appendChild(statusText)
 
     //amount
 
-    let amountText = document.createTextNode('3000000')
+    let amountText = document.createTextNode(item.amount)
     amountRow.appendChild(amountText)
     amountRow.classList.add('tr-amount')
 
@@ -107,6 +175,10 @@ const tableRow = () => {
     return tr
 }
 
-var a = document.getElementById('tb-body')
-a.appendChild(tableRow())
-console.log(a)
+var tableBody = document.getElementById('tb-body')
+for (const item of products) {
+    tableBody.appendChild(tableRow(item))
+
+}
+
+
