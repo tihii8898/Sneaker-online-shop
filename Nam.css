@@ -4,6 +4,7 @@ div{
 .content{
     display: inline-block;
     width: 100%;
+    margin-top: 50px;
 }
 .title-product{
     margin: 50px 20px 20px 20px;
