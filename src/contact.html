@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- link font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Use swiper-bundle-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header-style.css">
+    <!-- <link rel="stylesheet" href="css/style_of_sign_up.css"> -->
+    <link rel="stylesheet" href="css/style-content.css">
+    <script src="https://kit.fontawesome.com/fb7295659d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <!-- header logo -->
+        <div class="logo_img">
+           <a href="./index.html">
+               <img src="../img/logo/logo.png" alt="">
+            </a> 
+        </div>
+        <!-- MENU -->
+        <div class="menu-list">
+            <input type="checkbox" id="check">
+                <label class="menu-box" for="check">
+                    <i class="menu-btn fas fa-bars"></i>
+                </label> 
+            <div id="nav-list">
+             <!-----------------------NAV-------------------------------->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#popular-sneaker">Sale</a></li>
+                    <li><a href="nam.html">For men</a></li>
+                    <li><a href="#for-women">For Women</a></li>
+                    <li><a href="#for-kid">For Kid</a></li>
+                    <li><a class="js-user" href="#"><i class="fas fa-user"></i></a></li>
+                    <li class="cart-js"><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li class="search-js"><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="form-search">
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Search...">
+            <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="close-search">
+            <a href="#"><i class="fas fa-times"></a></i>
+        </div>
+    </div>
+
+    <div class="login">
+        <div class="login-form js_modal_form">
+            <div class="login-close close_js_btn">
+                <a href="#"><i class=" fas fa-times"></a></i>
+            </div>
+            <div class="login-header">
+                <img src="../img/logo/logo.png" alt="">
+            </div>
+            <div class="login-body">
+                <h2>YOUR ACCOUNT FOR EVERYTHING</h2>
+                <input class="account" type="email" placeholder="Email address">
+                <input class="account" type="password" placeholder="password">
+                <div class="check-account">
+                    <h5><input type="checkbox"> keep me signed in</h5>
+                    <a href="#"><h5>forgotten your password</h5></a>
+                    <div class="clear"></div>
+                </div>
+                <button class="login-btn">LOG IN</button>
+                <div class="check-no-have-acount">
+                    Not a member? 
+                    <a href="#" class="js-open-sig-up">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------Sign-Up------------------------ -->
+    <div class="Sign-Up" >
+        <div class="Sign-Up-form js_modal_form_sig_up">
+            <div class="Sign-Up-close close_js_btn_sig_up">
+                <a href="#"><i class=" fas fa-times"></a></i>
+            </div>
+            <div class="Sign-Up-header">
+                <img src="../img/logo/logo.png" alt="">
+            </div>
+            <div class="Sign-Up-body">
+                <h2>BECOME A H2M MEMBER</h2>
+                <h3>Create your H2M Member profile and get first access to the very best of H2M products, inspiration and community.</h3>
+                <input class="account" type="text" placeholder="Full Name">
+                <input class="account" type="email" placeholder="Email address">
+                <input class="account" type="password" placeholder="password">
+                <input class="account" type="text" placeholder="Date of Birth">
+                <div class="check-container row">
+                    <label for="check-Male" class="check-sex-item col">
+                        <input type="radio" name= "gender"  id="check-Male">
+                        Male
+                    </label>
+                    <label for="check-Female" class="check-sex-item col">
+                        <input type="radio" name= "gender" id="check-Female">
+                        Female
+                    </label>
+                </div>
+                <button class="Sign-Up-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart-container js-open-cart">
+        <div class="cart-close js-close-cart">
+            <a href="#"><i class=" fas fa-times"></a></i>
+        </div>
+        <div class="cart_list">
+            <table>
+            <thead>
+                <th>Sản phẩm </th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Chọn</th>
+            </thead>
+            <tbody class="body_of_Cart">
+                
+            </tbody> 
+        </table>
+            <div class="price-total">
+                <p>Tổng Tiền : <span>0</span><sub>đ</sub></p>
+            </div>
+            <button class= "buy_btn">Buy</button>
+        </div>
+    </div>
+    <!-- contact form -->
+    <div class="contact-wrapper">
+        <h2 class="contact-heading">Contact form</h2>
+        <div class="contact-form">
+            <div class="contact-content">
+                <input type="text" placeholder="Your Name">
+                <i class="fas fa-user-alt"></i>
+            </div>
+            <div class="contact-content email">
+                <input type="email" placeholder="Your mail">
+                <i class="fas fa-mail-bulk"></i>
+            </div>
+            <div class="contact-content Facebook">
+                <input type="url" placeholder="Facebook">
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="contact-content telephone">
+                <input type="tel" placeholder="Your Phone Number">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-content message">
+                <textarea name="message" placeholder="Enter Message"></textarea>
+                <i class="fas fa-comments"></i>
+            </div>
+            <div class="submit-contact">
+                <div class="g-recaptcha captcha" data-sitekey="6LfvJWcdAAAAAN9euivRs6CtfUJnBNQOTrSz7hys"></div>
+                <input type="submit" value="Send message" class="submit-btn">
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="https://www.google.com/recaptcha/api.js" async></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../src/script/script.js"></script>
+    <script src="../src/script/cart.js"></script>
+</body>
+</html>
