@@ -295,6 +295,13 @@ html {
   background-color: #fff0c2;
   color: #a68b00;
 }
+.container .nav-info .product.open .product-edit-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+}
 .container .nav-info .order {
   height: 100px;
   width: 100px;

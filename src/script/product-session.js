@@ -91,7 +91,7 @@ var products = [
         inStorage: 300,
         waiting:false,
         amount:99000,
-        selling:true,
+        selling:false,
     },
     {
         code:'DSWH08400NAU',
@@ -166,6 +166,7 @@ const tableRow = (item) => {
     sellingRow.classList.add('tr-selling')
     let cbx = document.createElement('input')
     cbx.type = 'checkbox'
+    cbx.checked = item.selling
     sellingRow.appendChild(cbx)
 
     for (let index = 0; index < list.length; index++) {
@@ -182,3 +183,21 @@ for (const item of products) {
 }
 
 
+var a = document.querySelectorAll('.tr-code')
+
+
+function productEdit() {
+    let form = document.querySelector('.product-edit-form')
+    a.forEach(item => { 
+        form.classList.remove(item.innerHTML)
+    })
+
+    form.classList.add('open',this.innerText)
+    
+
+}
+
+a.forEach(item => 
+    item.addEventListener('click',productEdit)
+    
+    )
