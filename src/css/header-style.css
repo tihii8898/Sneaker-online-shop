@@ -1,0 +1,702 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clear {
+    clear: both;
+}
+.row{
+    width: 100%;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+}
+.col-half {
+    width: 50%;
+}
+
+header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px #ccc solid;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    background-color: #FFF; 
+}
+/* ------ Logo------- */
+header .logo_img {
+    top: 0;
+    left: 0;
+    margin-left: 50px;
+    display: block;
+    height: 100%;
+}
+
+header img {
+    height: 100%;
+}
+
+/* ------ menu------- */
+header .menu-list{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* ------ NAV------- */
+#nav-list {
+    top: 0px;
+    right: 0px;
+    margin-right:50px;
+}
+#nav-list ul{
+    list-style-type:none;
+}
+#nav-list ul li{
+    display: inline-block;
+}
+#nav-list li:hover > a{
+    background: #EEE;
+    font-size: 20px;
+}
+#nav-list li a{
+    display:block;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 100px;
+    padding: 0 20px;
+}
+.menu-box{
+    position: absolute;
+    right: 0;
+    margin: 25px 25px;
+    display: none;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.login.open{
+    display: flex;
+}
+.login {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 5;
+}
+
+.login-form{
+    position: relative;
+    background: #FFF;
+    height: 550px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    animation: loginFakein ease 0.6s;
+    z-index: 1;
+    overflow: hidden;
+}
+.login-close:hover{
+    background: #ccc;
+}
+
+.login-header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.login-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.login-close a{
+    font-size: 20px;
+    color: #777;
+}
+.login-header img {
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.login-body {
+    position: absolute;
+    top: 100px;
+    height: 70%;
+    font-size: 20px;
+    margin-top: 14px;
+}
+
+.login-body .account{
+    display: block;
+    height: 12%;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 50px;
+    padding: 0 40px;
+}
+.login-body h2{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.check-account{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin:20px 5px;
+}
+.login-body h5{
+    color:#000;
+    width: 50%;
+    float: left;
+}
+.check-no-have-acount{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+.check-no-have-acount a{
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+.login-btn:hover:focus{
+   background: #EEE;
+    color: #000;
+}
+.login-btn{
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin: 30px auto;
+    background: #000;
+    color: #FFF;
+}
+
+@keyframes loginFakein {
+    from{
+        transform: translateX(140%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes searchFakein {
+    from{
+        transform: translateY(-140%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+/* ------search-box------- */
+.form-search {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 30%;
+    height: 100px;
+    margin-right: 10px;
+    padding: 10px;
+    display: none;
+    border: #ccc 1px solid;
+    animation:searchFakein ease 0.6s;
+    z-index: 3;
+    background-color: #FFF;
+}
+.form-search .search-box{
+    position: absolute;
+    height: 80px;
+    width: 80%;
+    margin-top: 10px;
+    
+}
+/* .search-btn:hover{
+    background: #ccc;
+} */
+.form-search .search-box .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80%;
+    width:60px;
+    text-decoration: none;
+    /* border: 1px solid #ccc; */
+    color: #000;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.form-search .search-box .search-btn i {
+    margin: 15px;
+}
+.form-search .search-box .search-txt{
+    border: #ccc 2px solid;
+    outline: none;
+    height: 80%;
+    width: 100%;
+    font-size: 20px;
+    padding: 0 30px;
+    border-radius: 1rem;
+}
+.close-search:hover {
+    background: rgb(161, 157, 157);
+}
+.close-search a{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+.close-search {
+    position: absolute;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin:0 20px;
+}
+.form-search.open{
+    display: flex;
+}
+/* ------ICON------- */
+.fa-user, .fa-shopping-bag,.fa-search{
+    font-size: 30px;
+}
+.Sign-Up.open{
+    display: flex;
+}
+.Sign-Up {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 5;
+}
+
+.Sign-Up-form{
+    position: relative;
+    background: #FFF;
+    height: 700px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    animation: loginFakein ease 0.6s;
+}
+.Sign-Up-close:hover{
+    background: #ccc;
+}
+.Sign-Up-header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+.Sign-Up-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.Sign-Up-close a{
+    font-size: 20px;
+    color: #777;
+}
+
+.Sign-Up-header img {
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.Sign-Up-body {
+    position: absolute;
+    top: 70px;
+    height: 80%;
+}
+.Sign-Up-body .account{
+    display: block;
+    height: 10%;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px #ccc solid;
+    padding: 0 40px;
+}
+.Sign-Up-body  h2{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    margin:20px 0;
+}
+.Sign-Up-body h3{
+    color:#000;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+.check-container {
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    padding: 10px;
+}
+.check-sex-item{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #EEE;
+    height: 100%;
+    width: 40%;
+    font-size: 20px;
+    margin: 0 20px;
+}
+.check-sex-item input{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+.check-sex-item input:checked~.check-Male{
+    border: #000;
+}
+.Sign-Up-btn:hover:focus{
+   background: #EEE;
+    color: #000;
+}
+.Sign-Up-btn{
+    display: block;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px auto;
+    background: #000;
+    color: #FFF;
+}
+#content .slider{
+    margin-top: 100px;
+    padding-top:30%;
+    background: url('/img/poster.jpg') top center / cover no-repeat;
+    height: 100%;
+}
+
+.cart-container.open{
+    display: flex;
+    height: 500px;
+}
+.cart-container{
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 50%;
+    height: 500px;
+    margin-right: 140px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    z-index: 3;
+    display: none;
+    overflow: auto;
+}
+.cart-close:hover{
+    background: #ccc;
+}
+.cart-container .cart-close{
+    position: absolute;
+    top: 0;right: 0;
+    padding: 15px;
+}
+.cart-container .cart-close a{
+    font-size: 20px;
+    color: #777;
+}
+.cart_list{
+    margin: 50px;
+    width: 100%;
+    font-size: 15px;
+}
+.cart_list table{
+    width: 100%;
+}
+.cart_list thead th:first-child {
+    text-align: left;
+}
+.cart_list img{
+    width: 70px;
+    margin: 5px;
+    float: left;
+}
+.cart_list .cart-img{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+.cart_list tbody input{
+    width: 30px;
+    outline: none;
+}
+.cart_list tbody td{
+    border-bottom:1px solid #ccc;
+    padding: 12px 10px;
+
+}
+ .price-total {
+     margin-top:10px;
+    font-weight: bold;
+    text-align: right;
+ }
+ .cart_list .buy_btn{ 
+    width: 100px;
+    height: 50px;
+    float: right;
+    margin: 10px 0;
+    font-size: 20px;
+    background: #fff;
+    border-radius: 10px;
+    font-weight: 700;   
+ }
+
+
+
+
+
+/* mobile */
+@media (max-width:739px){
+    header{
+        width: 100%;
+    }
+    /* logo */
+    header .logo_img {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin-left: 0;
+    }
+    header .logo_img img{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0  auto;
+    }
+     /* menu list */
+    header .menu-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        border: 1px #ccc solid;
+    }
+     /* search-box */
+    #nav-list{
+        display: block;
+    }
+    .menu-box{  
+        display: flex;
+    }
+    #nav-list {
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        width: 100%;
+        background:#FFF;
+        margin: 0;
+        border: 1px solid black;
+        transition: all .5s;
+    }
+    #nav-list ul li {
+        display: block;
+        border-bottom:1px #ccc solid;
+    }
+    #nav-list li:hover > a{
+        background: #ccc;
+        color: #000;
+    }
+    #nav-list li a{
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        color:#000;
+    }
+     /* checkbox-box để mở menu */
+    #check:checked ~ #nav-list{
+        right: 0;
+    }
+    /* set lại size cho phần form */
+    .login .login-form{
+        width: 90%;
+        height: 500px;
+    }
+    .login-btn{
+        height: 30px;
+        margin:20px auto;
+    }
+    .check-account{
+        padding: 0 5px;
+    }
+    /* sig-up  */
+    .Sign-Up-form{
+        width: 90%;
+        height: 550px;
+    }
+    .Sign-Up-body .h2{
+        padding: 3px;
+    }
+    .Sign-Up-body .account{
+        height: 8%;
+    }
+    .form-search {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 5;
+        background-color: rgba(0,0,0,0.4);
+    }
+    .close-search{
+        margin-right: 5px;
+    }
+    .cart-container{
+        width: 100%;
+        margin: 0;
+    }
+    .cart-container .cart_list{
+        width: 100%;
+        padding: 0;
+        margin: 50px 5px;
+    }
+    .cart-container .cart-close{
+        padding: 10px;
+        left: 0;
+    }
+
+}
+/* tablet */
+@media (min-width:740px) and (max-width:1023px){
+    header{
+        width: 100%;
+    }
+    /* menu btn */
+    .menu-box{  
+        display: flex;
+    }
+    #nav-list {
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        width: 25%;
+        background:#FFF;
+        margin: 0;
+        border: 1px solid black;
+        transition: all .5s;
+    }
+    #nav-list ul li {
+        display: block;
+        border-bottom:1px #ccc solid;
+    }
+    #nav-list li:hover > a{
+        background: #ccc;
+        color: #000;
+    }
+    #nav-list li a{
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        color:#000;
+    }
+    #check:checked ~ #nav-list{
+        right: 0;
+    }
+    .login .login-form{
+        width: 73%;
+        height: 600px;
+    }
+    .login-body{
+        height: 80%;
+        margin-top: 50px;
+    }
+
+    /* sig-up  */
+    .Sign-Up-form{
+        width: 90%;
+        height:700px;
+    }
+    /* search rp */
+    .form-search {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 5;
+        background-color: rgba(0,0,0,0.4);
+    }
+    .cart-container{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+

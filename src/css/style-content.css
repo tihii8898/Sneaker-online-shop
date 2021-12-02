@@ -1,0 +1,252 @@
+
+:root{
+    --yellow:#f9d806;
+    --light-yellow:#ffee80;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+
+* {
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  section{
+    padding:3rem 9%;
+  }
+.main-container {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  
+
+}
+
+
+
+.navigation_sale{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; /* dùng để hiển thị theo flex dọc */
+}
+.navigation_sale .nav {
+    
+    border: solid black 1px;
+    display:block;
+    height: 20%;
+    width: 50%;
+    margin: 20px;
+    box-sizing: border-box;
+
+}
+.navigation_sale .sale_off {
+    
+    border: solid black 1px;
+    display:block;
+    height: 20%;
+    width:50%;
+    margin: 20px;
+    box-sizing: border-box;
+
+}
+.product-container {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.product {
+    height: 100px ;
+    width: 100px;
+    border: solid black 1px;
+}
+#popular-sneaker {
+    height: auto;
+    padding-top:150px;
+}
+#popular-sneaker .heading {
+    text-align: center;
+    font-size: 3rem;
+}
+.sneaker-slider {
+   
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.sneaker-slider .box {
+    text-align: center;
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    transform: scale(.8);
+    height: 100%;
+    flex-flow: column;
+    border: 1px solid transparent;
+}
+.sneaker-slider .box:hover {
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.05);
+}
+.sneaker-slider .box img {
+    width: 100%;
+    flex: 2;
+    
+}
+.sneaker-slider .box .content {
+    flex:1;
+    
+    padding-top: 20px;
+    margin-bottom: 10%;
+    
+}
+.sneaker-slider .box .content p {
+    line-height: 3rem;
+    font-size: 2rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px;
+    width: 80%;
+    height: 6rem;
+}
+
+
+.sneaker-slider .box a{
+    position: relative;
+    text-decoration: none;
+    border: solid;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 3rem;
+    color: #000;
+     visibility: hidden; 
+    flex: 1;
+    
+    
+}
+.sneaker-slider .box:hover a {
+    visibility: visible;
+}
+
+.home {
+    height: 1000px;
+}
+.Product {
+    padding: 100px 0;
+}
+
+.Product .heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+.Product .heading span { 
+    font-size: 6rem;
+    font-family: 'Dancing Script', cursive;;
+}
+.Product .heading a {
+    font-size: 2rem;
+    margin-left: auto;
+    color: #666;
+}
+.Product .container {
+    grid: 25rem;
+    display: grid;
+    /* -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit]; */
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Product .container .box {
+    position: relative;
+    background-color: #f3f3f3;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.Product .container .box .icons {
+    position: absolute;
+    height: 30rem;
+    width: 100%;
+    top: -105%;
+    left: 0;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+          justify-content: center;
+    
+    background: rgba(243, 243, 243, .8);
+    gap: 1rem;
+}
+.Product .container .box:hover .icons {
+    top: 0;
+}
+
+.Product .container .box .icons a {
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: #fff;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    color: #666;
+}
+.Product .container .box .icons a:hover {
+    background: #21c41b;
+    color: #fff;
+}
+
+.Product .container .box .image {
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Product .container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Product .container .box .content {
+    padding: 1.5rem;
+}
+.Product .container .box .content h3 {
+    font-size: 2rem;
+
+    height: 9rem;
+    
+    overflow: hidden;
+}
+
+.Product .container .box .content .price {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.Product .container .box .content .stars i {
+    font-size: 1.7rem;
+    color: #f9d806;
+    text-decoration: none;
+}
+.Product .more {
+    border: solid;
+    font-size: 3rem;
+    padding: 30px;
+    border-radius: 30px; 
+}

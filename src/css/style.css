@@ -33,8 +33,6 @@ header{
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
-    background-color: #FFF; 
 }
 /* ------ Logo------- */
 header .logo_img {
@@ -129,7 +127,7 @@ header .menu-list{
      /* menu list */
     header .menu-list{
         position: fixed;
-        top: 0;
+        top: 100px;
         left: 0;
         height: 100px;
         width: 100%;
@@ -144,7 +142,7 @@ header .menu-list{
     }
     #nav-list {
         position: fixed;
-        top: 100px;
+        top: 200px;
         right: -100%;
         width: 50%;
         background:#FFF;
@@ -230,13 +228,12 @@ header .menu-list{
     }
     .login .login-form{
         width: 80%;
-        height: 80%;
+        height: 60%;
     }
     .form-search {
         top: 100px !important;
         width: 50% !important;
         margin-right: 25% !important;
-        
     }
     /* ------search-box------- */
 }
@@ -260,7 +257,7 @@ header .menu-list{
 .login-form{
     position: relative;
     background: #FFF;
-    height: 70%;
+    height: 60%;
     width: 25%;
     display: flex;
     justify-content: center;
@@ -372,35 +369,29 @@ header .menu-list{
     padding: 10px;
     display: none;
     border: #ccc 1px solid;
-    animation:searchFakein ease 0.6s;
-    z-index: 1;
-    background-color: #FFF;
+    animation:searchFakein ease 0.6s
 }
 .form-search .search-box{
     position: absolute;
     height: 80px;
     width: 80%;
     margin-top: 10px;
-    
 }
-/* .search-btn:hover{
+.search-btn:hover{
     background: #ccc;
-} */
+}
 .form-search .search-box .search-btn {
     position: absolute;
     top: 0;
     right: 0;
     height: 80%;
     width:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    /* border: 1px solid #ccc; */
+    border: 1px solid #ccc;
     color: #000;
-    margin-top: 10px;
-    border-radius: 20px;
-}
-
-.form-search .search-box .search-btn i {
-    margin: 15px;
 }
 .form-search .search-box .search-txt{
     border: #ccc 2px solid;
@@ -409,7 +400,6 @@ header .menu-list{
     width: 100%;
     font-size: 20px;
     padding: 0 30px;
-    border-radius: 1rem;
 }
 .close-search:hover {
     background: rgb(161, 157, 157);

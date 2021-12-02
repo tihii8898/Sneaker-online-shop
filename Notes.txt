@@ -22,4 +22,9 @@
     - Minh tiếp tục thiết kế homepage
     - Hoàn làm trang thông tin khách hàng
     - Huy làm trang thông tin cho người bán
-
+1/11/2021:
+    - Tiếp tục làm phần từ ngày 25/10
+    - Nếu hoàn thành:
+        + Minh => Chi tiết sản phẩm
+        + Hoàn => Dành cho nam, nữ,...
+        + Huy => Tìm hiểu đăng nhập,database,... => Back-end

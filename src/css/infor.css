@@ -1,0 +1,96 @@
+.left, .right{
+    float: left;
+    display: block;
+}
+.right{
+    background: rgb(255, 255, 255);
+    width: 80%;
+    height: 100%;
+    border-bottom: 10px;
+    padding: 20px;
+}
+.left{
+    width: 20%;
+    background:rgb(244, 244, 245);
+    height: 100%;
+    border-bottom: 10px;
+    padding: 20px;
+}
+div{
+    display: block;
+}
+.property{
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+    display: flex;
+}
+label{
+    margin-right: 20px;
+    width: 15%;
+    text-align: right;
+}
+.icon{
+    float: left;
+    width: 30px
+}
+.content{
+    display: flex;
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+.item-ct{
+    width: calc(100%  - 180px);
+    position: relative;
+    float: left;
+}
+.input-text{
+    padding-right: 180px;
+}
+.item-head-right,.item-head-left{
+    width: 100%;
+    float: left;
+    margin: 15px 20px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #efefef;
+    font-size: 30px;
+}
+.item-head-right{
+    margin-bottom: 10px;
+}
+.item-body-right{
+    border:2px solid black
+}
+.item-body-left{
+    margin: 10px;
+    padding: 20px;
+    float: left;
+    margin-top: 50px;
+}
+.item-body-right{
+    margin: 10px;
+    padding-top: 50px;
+    float: left;
+    height: 88.5%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+ul li{
+    margin: 0;
+    padding-bottom: 20px;
+}
+.tk-btn-submit{
+    border-radius: 1px;
+    background-color: blue;
+    width: 180px;
+    line-height: 50px;
+    float: left;
+    text-align: center;
+    color: white;
+}

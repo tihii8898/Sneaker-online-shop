@@ -1,0 +1,453 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HMH</title>
+        <link rel="stylesheet" href="./css/header-style.css">
+        <link rel="stylesheet" href="./css/nam.css">
+        <link rel="stylesheet" href="./css/footer-style.css">
+        <script src="https://kit.fontawesome.com/fb7295659d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <!-- header logo -->
+            <div class="logo_img">
+               <a href="./index.html">
+                   <img src="../img/logo/logo.png" alt="">
+                </a> 
+            </div>
+            <!-- MENU -->
+            <div class="menu-list">
+                <input type="checkbox" id="check">
+                    <label class="menu-box" for="check">
+                        <i class="menu-btn fas fa-bars"></i>
+                    </label> 
+                <div id="nav-list">
+                 <!-----------------------NAV-------------------------------->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#popular-sneaker">Sale</a></li>
+                        <li><a href="#for-men">For men</a></li>
+                        <li><a href="#for-women">For Women</a></li>
+                        <li><a href="#for-kid">For Kid</a></li>
+                        <li><a class="js-user" href="#"><i class="fas fa-user"></i></a></li>
+                        <li class="cart-js"><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        <li class="search-js"><a href="#"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+<!-- 
+        <div class="form-search">
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Search...">
+                <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="close-search">
+                <a href="#"><i class="fas fa-times"></a></i>
+            </div>
+        </div>
+    
+        <div class="login">
+            <div class="login-form js_modal_form">
+                <div class="login-close close_js_btn">
+                    <a href="#"><i class=" fas fa-times"></a></i>
+                </div>
+                <div class="login-header">
+                    <img src="../img/logo/logo.png" alt="">
+                </div>
+                <div class="login-body">
+                    <h2>YOUR ACCOUNT FOR EVERYTHING</h2>
+                    <input class="account" type="email" placeholder="Email address">
+                    <input class="account" type="password" placeholder="password">
+                    <div class="check-account">
+                        <h5><input type="checkbox"> keep me signed in</h5>
+                        <a href="#"><h5>forgotten your password</h5></a>
+                        <div class="clear"></div>
+                    </div>
+                    <button class="login-btn">LOG IN</button>
+                    <div class="check-no-have-acount">
+                        Not a member? 
+                        <a href="#" class="js-open-sig-up">Join Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         -------------------Sign-Up------------------------ 
+        <div class="Sign-Up" >
+            <div class="Sign-Up-form js_modal_form_sig_up">
+                <div class="Sign-Up-close close_js_btn_sig_up">
+                    <a href="#"><i class=" fas fa-times"></a></i>
+                </div>
+                <div class="Sign-Up-header">
+                    <img src="../img/logo/logo.png" alt="">
+                </div>
+                <div class="Sign-Up-body">
+                    <h2>BECOME A H2M MEMBER</h2>
+                    <h3>Create your H2M Member profile and get first access to the very best of H2M products, inspiration and community.</h3>
+                    <input class="account" type="text" placeholder="Full Name">
+                    <input class="account" type="email" placeholder="Email address">
+                    <input class="account" type="password" placeholder="password">
+                    <input class="account" type="text" placeholder="Date of Birth">
+                    <div class="check-container row">
+                        <label for="check-Male" class="check-sex-item col">
+                            <input type="radio" name= "gender"  id="check-Male">
+                            Male
+                        </label>
+                        <label for="check-Female" class="check-sex-item col">
+                            <input type="radio" name= "gender" id="check-Female">
+                            Female
+                        </label>
+                    </div>
+                    <button class="Sign-Up-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-container js-open-cart">
+            <div class="cart-close js-close-cart">
+                <a href="#"><i class=" fas fa-times"></a></i>
+            </div>
+            <div class="cart_list">
+                <table>
+                <thead>
+                    <th>Sản phẩm </th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Chọn</th>
+                </thead>
+                <tbody class="body_of_Cart">
+                    
+                </tbody> 
+            </table>
+                <div class="price-total">
+                    <p>Tổng Tiền : <span>0</span><sub>đ</sub></p>
+                </div>
+                <button class= "buy_btn">Buy</button>
+            </div>
+        </div>*/ -->
+        <main>
+            <section class="content">
+                <div class="title-product">
+                    <span>Nam's products</span>
+                </div>
+                <div id= 'filter-boxes'>
+                    <div class="left">
+                        <div class="filter">
+                            <div class="name-title">
+                                <h3>Filter</h3>
+                            </div>
+                        </div>
+                    
+                        <div class="filter">
+                            <form>
+                                <h3 class="name-filter">Khoảng giá</h3>
+                                <input type="checkbox" name="cost" value="Dưới 1 triệu"><span class="data">Dưới 1 triệu</span><br>
+                                <input type="checkbox" name="cost" value="1 triệu đến 3 triệu"><span class="data">1 triệu đến 3 triệu</span> <br>
+                                <input type="checkbox" name="cost" value="Trên 3 triệu"><span class="data">Trên 3 triệu</span>
+                            </form>
+                        </div>
+                        <div class="filter">
+                            <h3 class="name-filter">Size</h3>
+                            <form>
+                                <input type="checkbox" name="size" value="39"><span class="data">39</span><br>
+                                <input type="checkbox" name="size" value="40"><span class="data">40</span><br>
+                                <input type="checkbox" name="size" value="41"><span class="data">41</span><br>
+                                <input type="checkbox" name="size" value="42"><span class="data">42</span><br>
+                                <input type="checkbox" name="size" value="43"><span class="data">43</span><br>
+                                <input type="checkbox" name="size" value="44"><span class="data">44</span><br>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="container">
+                            <div class="box">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-shopping-cart" title ="Thêm vào giỏ"></a>
+                                    <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                                    <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                                </div>
+                                <div class="image">
+                                    <img src="/img/men/dsmh03801xdg_11c789b396e34801aa6c358df27834e1_large.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 title="Giày Bóng Đá Nam Biti's Hunter Football DSMH03801XDG (Xanh Dương)">Giày Bóng Đá Nam Biti's Hunter Football DSMH03801XDG (Xanh Dương)</h3>
+                                    <div class="price">650,000 đ</div>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-shopping-cart" title ="Thêm vào giỏ"></a>
+                                <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                                <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                            </div>
+                            <div class="image">
+                                <img src="/img/men/z2866520565802_427dabbb1087b7f3947554eeda777e41_bf936b3ddd934e4fb2ff96756a41add7_large.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 title="Giày Thể Thao Nam Biti’s Hunter X Z MIDNIGHT BLACK MID - TOP DSMH06301DEN (Đen)">Giày Thể Thao Nam Biti’s Hunter X Z MIDNIGHT BLACK MID - TOP(Đen)</h3>
+                                <div class="price">1,119,000 đ</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-shopping-cart" title ="Thêm vào giỏ"></a>
+                                <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                                <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                            </div>
+                            <div class="image">
+                                <img src="/img/men//dsmh03801xmn40_1__442a58fcbdbb49d2ba59bae48bed3d51_large.jpg" alt="">
+                            </div>
+    
+                            <div class="content">
+                                <h3 title="Giày Bóng Đá Nam Biti's Hunter Football DSMH03801XMN (Xanh Mi Nơ)">Giày Bóng Đá Nam Biti's Hunter Football (Xanh Mi Nơ)</h3>
+                                <div class="price">650,000 đ</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-shopping-cart" title ="Thêm vào giỏ"></a>
+                                <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                                <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                            </div>
+                            <div class="image">
+                                <img src="/img/men/dem010400den_6750815dac044c5d892acb47e67ea9cb_large.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 title="Dép Eva Phun Nam Biti's DEM010400DEN (Đen)">Dép Eva Phun Nam Biti's (Đen)</h3>
+                                <div class="price">99,000 đ</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-shopping-cart" title ="Thêm vào giỏ"></a>
+                                <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                                <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                            </div>
+                            <div class="image">
+                                <img src="../img/men/4_1_d7fbfff2-a5a2-4281-b607-f4cb72984526_350x.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 title="Biti's Hunter X Army Green Men's Sneakers">Biti's Hunter X Army Green Men's Sneakers</h3>
+                                <div class="price">1,119,000 đ</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-shopping-cart" title ="Thêm vào giỏ"></a>
+                                <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                                <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                            </div>
+                            <div class="image">
+                                <img src="../img/men/1_44_350x.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 title="Biti's Hunter X Matcha Men's Sneakers (Green)">GBiti's Hunter X Matcha Men's Sneakers (Green)</h3>
+                                <div class="price">1,119,000 đ</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-shopping-cart" title ="Thêm vào giỏ"></a>
+                                <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                                <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                            </div>
+                            <div class="image">
+                                <img src="../img/men/1_42_350x.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 title="Biti's Hunter X Americano Men's Sneakers (Black)">Biti's Hunter X Americano Men's Sneakers (Black)</h3>
+                                <div class="price">1,119,000 đ</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-shopping-cart" title ="Thêm vào giỏ"></a>
+                                <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                                <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                            </div>
+                            <div class="image">
+                                <img src="../img/men/1_41_350x.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 title="Biti's Hunter X Festive Washed-Green Grey Men's Sneakers">Biti's Hunter X Festive Washed-Green Grey Men's Sneakers</h3>
+                                <div class="price">1,119,000 đ</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-shopping-cart" title ="Thêm vào giỏ"></a>
+                                <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                                <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                            </div>
+                            <div class="image">
+                                <img src="../img/men/6_7_350x.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 title="Biti's Hunter Dark Grey Men's Sandals (Green)">Biti's Hunter Dark Grey Men's Sandals (Green)</h3>
+                                <div class="price">399,000 đ</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-shopping-cart" title ="Thêm vào giỏ"></a>
+                                <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                                <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                            </div>
+                            <div class="image">
+                                <img src="../img/men/1_8_350x.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 title="Biti's Hunter University Red Men's Sandals (Red)">Biti's Hunter University Red Men's Sandals (Red)</h3>
+                                <div class="price">399,000 đ</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icons">
+                                <a href="#" class="fas fa-shopping-cart" title ="Thêm vào giỏ"></a>
+                                <a href="#" class="fas fa-heart" title="Thêm vào yêu thích"></a>
+                                <a href="#" class="fas fa-eye" title="Xem thông tin sản phẩm"></a>
+                            </div>
+                            <div class="image">
+                                <img src="../img/men/2_9_350x.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 title="Biti's Hunter Army Green Men's Sandals">Biti's Hunter Army Green Men's Sandals</h3>
+                                <div class="price">399,000 đ</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container-footer">
+              <div class="row">
+                <div class="about">
+                  <h6>About</h6>
+                  <p class="text-justify"></p>
+                </div>
+        
+                <div class="category">
+                  <h6>Categories</h6>
+                  <ul class="footer-links">
+                    <li><a href="http://scanfcode.com/category/c-language/">Men's shoes</a></li>
+                    <li><a href="http://scanfcode.com/category/front-end-development/">Women's shoes</a></li>
+                    <li><a href="http://scanfcode.com/category/back-end-development/">Children'shoes</a></li>
+                  </ul>
+                </div>
+        
+                <div class="quick">
+                  <h6>Quick Links</h6>
+                  <ul class="footer-links">
+                    <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                    <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                    <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                    <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <div class="under">
+                <div class="copy">
+                  <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+               <a href="#">Scanfcode</a>.
+                  </p>
+                </div>
+        
+                <div class="social">
+                  <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </footer>
+
+        <script src="./script/nam.js"></script>
+        <script src="./script/cart.js"></script>
+        <script src="./script/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HMH</title>
+        <!-- link font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- Use swiper-bundle-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <!-- <link rel="stylesheet" href="css/home-style.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="./css/header-style.css">
+        <link rel="stylesheet" href="./css/sign-up-style.css">
+        <link rel="stylesheet" href="./css/footer-style.css"> -->
+        <script src="https://kit.fontawesome.com/fb7295659d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/src/css/quanly.css">
+
+        
+    </head>
+<body>
+        
+    <main>
+        <div class="container">
+            <div class="nav">
+                <ul>
+                    <li class="home-btn" title="Trang chủ">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="home-outline" ></ion-icon></span>
+                            <span class="title">Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="product-btn" title="Sản phẩm">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="cube-outline"></ion-icon></span>
+                            <span class="title">Sản phẩm</span>
+                        </a>
+                    </li>
+                    <li class="order-btn" title="Quản lý đơn hàng">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="reorder-four-outline"></ion-icon></span>
+                            <span class="title">Quản lý đơn hàng</span>
+                        </a>
+                    </li>
+                    
+                    <li class="finance-btn" title="Tài chính">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="wallet-outline"></ion-icon></span>
+                            <span class="title">Tài chính</span>
+                        </a>
+                    </li>
+                    <li class="message-btn" title="Tin nhắn">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></i></span>
+                            <span class="title">Tin nhắn </span>
+                        </a>
+                    </li>
+                    <li class="feedback-btn" title="Phản hồi từ khách hàng">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                            <span class="title">Phản hồi từ khách hàng</span>
+                        </a>
+                    </li>
+                    <li class="help-btn" title="Giúp đỡ">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></ion-icon></span>
+                            <span class="title">Giúp đỡ</span>
+                        </a>
+                    </li>
+                    <li class="setting-btn" title="Cài đặt">
+                        <a href="#">
+                            <span class="icon" ><ion-icon name="settings-outline"></ion-icon></ion-icon></span>
+                            <span class="title">Cài đặt</span>
+                        </a>
+                    </li>
+                    <li class="signout-btn" title="Đăng suất">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                            <span class="title">Đăng suất</span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="nav-info">
+                <div class="left-nav home">
+                    <div class="today">
+                        <div class="items">
+                            <div>
+                                <div class="numbers">1811</div>
+                                <div class="title">Lượt xem</div>
+                            </div>
+                            <div class="icon"><i class="far fa-eye"></i></div>
+                        </div>
+                        <div class="items">
+                            <div>
+                                <div class="numbers">181</div>
+                                <div class="title">Đã bán</div>
+                            </div>
+                            <div class="icon"><i class="fas fa-cash-register"></i></div>
+                            
+                        </div>
+                        <div class="items">
+                            <div>
+                                <div class="numbers">1612</div>
+                                <div class="title">Thu nhập</div>
+                            </div>
+                            <div class="icon"><i class="fas fa-money-check-alt"></i></div>
+                        </div>
+                        <div class="items">
+                            <div>
+                                <div class="numbers">52</div>
+                                <div class="title">Feedback</div>
+                            </div>
+                            <div class="icon"><i class="far fa-comments"></i></div>
+                        </div>
+                    </div>
+                    <div class="analysis">
+                            <div class="side chart">
+                                <canvas id="myChart" ></canvas>
+                            </div>
+                            <div class="side shop-info">
+                                <div class="line">
+                                    <span>Tên của hàng: </span>
+                                    <label id="label name">H & M</label>
+                                    <input type="text" name="" id="input name" placeholder="Tên cửa hàng">
+                                </div>
+                                <div class="line">
+                                    <span>Chủ sở hữu:</span>
+                                    <label id="label owner" >A </label>
+                                    <input type="text" name="" id="input owner" placeholder="Chủ sở hữu">
+                                </div>
+                                <div class="line">
+                                    <span>Ngày thành lập: </span>
+                                    <label id="label founding"></label>
+                                    <input type="date" name="" id="input founding" >
+                                </div>
+                                <div class="line">
+                                    <span>Địa chỉ: </span>
+                                    <label id="label address">C</label>
+                                    <input type="text" name="" id="input address" placeholder="Địa chỉ">
+                                </div>
+                                <span id="pen" title="Sửa">
+                                    <ion-icon name="create-outline"></ion-icon>
+                                    <span>Chỉnh sửa </span>
+                                </span>
+                                <button id="change-info">Thay đổi</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="left-nav product">
+                    <span>Các sản phẩm bán chạy nhất</span>
+                    <div class="top-1">
+                        <div class="box man">
+                            <img src="../img/men/z2866520565802_427dabbb1087b7f3947554eeda777e41_bf936b3ddd934e4fb2ff96756a41add7_large.jpg" alt="">
+                            <div class="about-img">
+                                <div class="name">
+                                    <span id="name-top-1-men"></span>
+                                </div> 
+                                <div class="earn">
+                                    <span id="earn-top-1-men"></span>
+                                </div>
+                                <div class="release-at">
+                                    <span id="day-top-1-men" ></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box woman">
+                            <img src="../img/women/dsc_0009_8d59ab2d1c20497cb3c51e0321f47a0b_medium.jpg" alt="">
+                            <div class="about-img">
+                                <div class="name">
+                                    <span id="name-top-1-women"></span>
+                                </div> 
+                                <div class="earn">
+                                    <span id="earn-top-1-women"></span>
+                                </div>
+                                <div class="release-at">
+                                    <span id="day-top-1-women" ></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box child">
+                            <img src="../img/kid/giay-the-thao-be-trai-gh03_8bb7e0866fca4f92b604f4159b288bb0_medium.jpg" alt="">
+                            <div class="about-img">
+                                <div class="name">
+                                    <span id="name-top-1-child"></span>
+                                </div> 
+                                <div class="earn">
+                                    <span id="earn-top-1-child"></span>
+                                </div>
+                                <div class="release-at">
+                                    <span id="day-top-1-child" ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Mã sản phẩm</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Ngày mở bán</th>
+                                    <th>Tình trạng kho</th>
+                                    <th>Doanh thu</th>
+                                    <th>Đang mở bán</th>
+                                </tr>
+                            </thead>
+                            <tbody id = 'tb-body'>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="product-edit-form"></div>
+                </div>
+                <div class="left-nav order"></div>
+                <div class="left-nav finance"></div>
+                <div class="left-nav message"></div>
+                <div class="left-nav feedback"></div>
+                <div class="left-nav help"></div>
+                <div class="left-nav setting"></div>
+                <div class="left-nav signout"></div>
+                </div>
+        </div>
+
+    </main>
+    <!--Ion icons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Script for nav -->
+    <script src="./script/for-seller.js"></script>
+
+    <!-- Script chart-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <script src="./script/analysis.js"></script>
+
+    <!-- Script product table-->
+    <script src="/src/script/product-session.js"></script>
+</body>
+</html>

@@ -1,106 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/test/style.css">
-</head>
-<body>
-    <section class="Men">
-        <h1 class="heading">Dành cho nam</h1>
-           <div class="container">
-                <div class="box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                    </div>
-                    <div class="image">
-                        <img src="/img/men/z2866520565802_427dabbb1087b7f3947554eeda777e41_bf936b3ddd934e4fb2ff96756a41add7_large.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Giày Thể Thao Nam Biti’s Hunter X Z MIDNIGHT BLACK MID - TOP DSMH06301DEN (Đen)</h3>
-                        <div class="price">1,119,000 đ</div>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                    </div>
-                    <div class="image">
-                        <img src="/img/men/z2866520565802_427dabbb1087b7f3947554eeda777e41_bf936b3ddd934e4fb2ff96756a41add7_large.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Giày Thể Thao Nam Biti’s Hunter X Z MIDNIGHT BLACK MID - TOP DSMH06301DEN (Đen)</h3>
-                        <div class="price">$18.99</div>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                    </div>
-                    <div class="image">
-                        <img src="/img/men/z2866520565802_427dabbb1087b7f3947554eeda777e41_bf936b3ddd934e4fb2ff96756a41add7_large.jpg" alt="">
-                    </div>
-
-                    <div class="content">
-                        <h3>Giày Thể Thao Nam Biti’s Hunter X Z MIDNIGHT BLACK MID - TOP DSMH06301DEN (Đen)</h3>
-                        <div class="price">$18.99</div>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                    </div>
-                    <div class="image">
-                        <img src="/img/men/z2866520565802_427dabbb1087b7f3947554eeda777e41_bf936b3ddd934e4fb2ff96756a41add7_large.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Giày Thể Thao Nam Biti’s Hunter X Z MIDNIGHT BLACK MID - TOP DSMH06301DEN (Đen)</h3>
-                        <div class="price">$18.99</div>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-           </div>
-           
-            <div class="more"></div>
-    </section>
-</body>
-</html>
+<html>
+    <head>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+  
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Year', 'Sales', 'Expenses'],
+            ['2004',  1000,      400],
+            ['2005',  1170,      460],
+            ['2006',  660,       1120],
+            ['2007',  1030,      540]
+          ]);
+  
+          var options = {
+            title: 'Company Performance',
+            curveType: 'function',
+            legend: { position: 'bottom' }
+          };
+          <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+  
+          chart.draw(data, options);
+        }
+      </script>
+    </head>
+    <body>
+      <div id="curve_chart" style="width: 900px; height: 500px"></div>
+    </body>
+  </html>
+  
