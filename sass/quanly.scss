@@ -126,9 +126,9 @@ html {
         }
         & .home.open {
             display: block;
-            width: max-content;
+            width: 100%;
             padding: 20px;
-            // height: fit-content;
+            height: 1000px;
             background: linear-gradient(to right top, #65dfc9, #6cdbeb);
                 & .today {
                     width: 100%;
@@ -175,7 +175,7 @@ html {
                     // grid-column: auto;
                     grid-gap: 10px;
                     min-height: 200px;
-
+                    // height: 1000px;
                     & .side{
                         position: relative;
                         background:#fff;
@@ -254,17 +254,19 @@ html {
 
                 & .top-1{
                     margin-top: 10px;
-                    display: grid;
-                    grid-template-columns: repeat(3,1fr);
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
                     // background-color: #03a9f4;
                     justify-items: center;
-                    grid-gap: 10px;
+                    
                     & .box {
                         height: fit-content;
                         width: 300px;
                         background-color: whitesmoke;
                         box-shadow: 0 7px 25px rgba(0, 0, 0, 0.025);
                         padding: 10px;
+                        margin: 10px;
                         & img { 
                             height: 100%;
                             width: 100%;

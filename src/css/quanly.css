@@ -110,8 +110,9 @@ html {
 }
 .container .nav-info .home.open {
   display: block;
-  width: max-content;
+  width: 100%;
   padding: 20px;
+  height: 1000px;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
 }
 .container .nav-info .home.open .today {
@@ -220,10 +221,10 @@ html {
 }
 .container .nav-info .product.open .top-1 {
   margin-top: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   justify-items: center;
-  grid-gap: 10px;
 }
 .container .nav-info .product.open .top-1 .box {
   height: fit-content;
@@ -231,6 +232,7 @@ html {
   background-color: whitesmoke;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.025);
   padding: 10px;
+  margin: 10px;
 }
 .container .nav-info .product.open .top-1 .box img {
   height: 100%;
