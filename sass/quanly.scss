@@ -18,6 +18,7 @@ html {
     justify-content: space-between;
     flex-flow: row;
     & .nav {
+        
         position: fixed;
         width: 300px;
         height: 100%;
@@ -125,9 +126,9 @@ html {
         }
         & .home.open {
             display: block;
-            
+            width: max-content;
             padding: 20px;
-            height: 1000px;
+            // height: fit-content;
             background: linear-gradient(to right top, #65dfc9, #6cdbeb);
                 & .today {
                     width: 100%;
@@ -231,9 +232,11 @@ html {
 
                     }
                 }
-        }
+        }   
+            
             & .product {
-                display:none;    
+                display:none;
+                
             }
             & .product.open {
                 padding: 10px;
@@ -462,5 +465,16 @@ html {
         }
 
 
+    }
+
+    .tr-name,.th-name {
+        display: none;
+    }
+}
+
+/* mobile */
+@media (max-width: 740px) {
+    .tr-release,.th-release {
+        display: none;
     }
 }

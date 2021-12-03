@@ -110,8 +110,8 @@ html {
 }
 .container .nav-info .home.open {
   display: block;
+  width: max-content;
   padding: 20px;
-  height: 1000px;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
 }
 .container .nav-info .home.open .today {
@@ -399,6 +399,16 @@ html {
   }
   .container .nav-info .home.open .today {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .tr-name, .th-name {
+    display: none;
+  }
+}
+/* mobile */
+@media (max-width: 740px) {
+  .tr-release, .th-release {
+    display: none;
   }
 }
 
