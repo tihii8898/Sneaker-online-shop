@@ -4,16 +4,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HMH</title>
-        <link rel="stylesheet" href="../src/css/header-style.css">
-        <link rel="stylesheet" href="../src/css/infor.css">
-        <link rel="stylesheet" href="../src/css/footer-style.css">
+        <link rel="stylesheet" href="./css/header-style.css">
+        <link rel="stylesheet" href="./css/infor.css">
+        <link rel="stylesheet" href="./css/footer-style.css">
         <script src="https://kit.fontawesome.com/fb7295659d.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div class="top">
+        
+            <a href="">0966 xxx xxx<span>(8h- 12h, 13h30 - 17h)</span></a>
+            <a href="contact.html">Contact</a>
+            <a href="">Thông tin khách hàng</a>
+        </div>
         <header>
             <!-- header logo -->
             <div class="logo_img">
-               <a href="./index.html">
+               <a href="http://127.0.0.1:5501/index.html">
                    <img src="../img/logo/logo.png" alt="">
                 </a> 
             </div>
@@ -28,7 +34,7 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#popular-sneaker">Sale</a></li>
-                        <li><a href="nam.html">For men</a></li>
+                        <li><a href="#for-men">For men</a></li>
                         <li><a href="#for-women">For Women</a></li>
                         <li><a href="#for-kid">For Kid</a></li>
                         <li><a class="js-user" href="#"><i class="fas fa-user"></i></a></li>
@@ -38,100 +44,12 @@
                 </div>
             </div>
         </header>
-        
-        <div class="form-search">
-            <div class="search-box">
-                <input type="text" class="search-txt" placeholder="Search...">
-                <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
-            </div>
-            <div class="close-search">
-                <a href="#"><i class="fas fa-times"></a></i>
-            </div>
-        </div>
-    
-        <div class="login">
-            <div class="login-form js_modal_form">
-                <div class="login-close close_js_btn">
-                    <a href="#"><i class=" fas fa-times"></a></i>
-                </div>
-                <div class="login-header">
-                    <img src="../img/logo/logo.png" alt="">
-                </div>
-                <div class="login-body">
-                    <h2>YOUR ACCOUNT FOR EVERYTHING</h2>
-                    <input class="account" type="email" placeholder="Email address">
-                    <input class="account" type="password" placeholder="password">
-                    <div class="check-account">
-                        <h5><input type="checkbox"> keep me signed in</h5>
-                        <a href="#"><h5>forgotten your password</h5></a>
-                        <div class="clear"></div>
-                    </div>
-                    <button class="login-btn">LOG IN</button>
-                    <div class="check-no-have-acount">
-                        Not a member? 
-                        <a href="#" class="js-open-sig-up">Join Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- -------------------Sign-Up------------------------ -->
-        <div class="Sign-Up" >
-            <div class="Sign-Up-form js_modal_form_sig_up">
-                <div class="Sign-Up-close close_js_btn_sig_up">
-                    <a href="#"><i class=" fas fa-times"></a></i>
-                </div>
-                <div class="Sign-Up-header">
-                    <img src="../img/logo/logo.png" alt="">
-                </div>
-                <div class="Sign-Up-body">
-                    <h2>BECOME A H2M MEMBER</h2>
-                    <h3>Create your H2M Member profile and get first access to the very best of H2M products, inspiration and community.</h3>
-                    <input class="account" type="text" placeholder="Full Name">
-                    <input class="account" type="email" placeholder="Email address">
-                    <input class="account" type="password" placeholder="password">
-                    <input class="account" type="text" placeholder="Date of Birth">
-                    <div class="check-container row">
-                        <label for="check-Male" class="check-sex-item col">
-                            <input type="radio" name= "gender"  id="check-Male">
-                            Male
-                        </label>
-                        <label for="check-Female" class="check-sex-item col">
-                            <input type="radio" name= "gender" id="check-Female">
-                            Female
-                        </label>
-                    </div>
-                    <button class="Sign-Up-btn">Sign Up</button>
-                </div>
-            </div>
-        </div>
-        <div class="cart-container js-open-cart">
-            <div class="cart-close js-close-cart">
-                <a href="#"><i class=" fas fa-times"></a></i>
-            </div>
-            <div class="cart_list">
-                <table>
-                <thead>
-                    <th>Sản phẩm </th>
-                    <th>Giá</th>
-                    <th>Số lượng</th>
-                    <th>Chọn</th>
-                </thead>
-                <tbody class="body_of_Cart">
-                    
-                </tbody> 
-            </table>
-                <div class="price-total">
-                    <p>Tổng Tiền : <span>0</span><sub>đ</sub></p>
-                </div>
-                <button class= "buy_btn">Buy</button>
-            </div>
-        </div>
         <main>
             <section class="content">
                 <div class="left">
                     <div class="item-head-left">
-                    <span>Tài khoản</span>
-                    <img src="icon-tk-2021.png" class="icon">
+                        <img src="../img/icon-tk-2021.png" class="icon">
+                        <span>Tài khoản</span>
                     </div>
                     <div class="item-body-left">
                         <ul>
@@ -144,44 +62,46 @@
                     <div class="item-head-right">
                         <label>Thông tin khách hàng</label>
                     </div>
+                    <form>
                     <div class="item-body-right">
                     <div class="property">
-                        <label>Họ Tên</label>
+                        <label for="fullName">Họ Tên</label>
                         <div class="item-ct">
-                            <input type="text" class="input-text">
+                            <input type="text" class="input-text" id="fullName" name="fullName">
                         </div>
                     </div>
                     <div class="property">
-                        <label>Số điện thoại</label>
+                        <label for="number">Số điện thoại</label>
                         <div class="item-ct">
-                            <input type="text" class="input-text">
+                            <input type="text" class="input-text" id="number" name="number">
                         </div>
                     </div>
                     <div class="property">
-                        <label>Giới tính</label>
+                        <label for="sex">Giới tính</label>
                         <div class="item-ct">
-                            <input type="text" class="input-text">
+                            <input type="text" class="input-text" id="sex" name="sex">
                         </div>
                     </div>
                     <div class="property">
-                        <label>Email</label>
+                        <label for="email">Email</label>
                         <div class="item-ct">
-                            <input type="text" class="input-text">
+                            <input type="text" class="input-text" id="email" name="email">
                         </div>
                     </div>
                     <div class="property">
-                        <label>Địa chỉ</label>
+                        <label for="address">Địa chỉ</label>
                         <div class="item-ct">
-                            <input type="text" class="input-text">
+                            <input type="text" class="input-text" id="address" name="address">
                         </div>
                     </div>
                     <div class="property">
                         <label></label>
-                        <div class="item-ct">
-                            <a href="#" type="submit" class="tk-btn-submit">Chỉnh sửa thông tin</a>
-                        </div>
+                        <button class="item-ct" id="tk-btn-submit" type="submit">
+                            Chỉnh sửa thông tin
+                        </button>
                     </div>
                 </div>
+                </form>
                 </div>
             </section>
         </main>
@@ -206,7 +126,7 @@
                   <h6>Quick Links</h6>
                   <ul class="footer-links">
                     <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                    <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
                     <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
                     <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
@@ -232,5 +152,6 @@
               </div>
             </div>
         </footer>
+        <script src="./script/infor.js"></script>
     </body>
 </html>
