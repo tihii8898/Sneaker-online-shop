@@ -41,7 +41,7 @@ label{
     height: 100%;
 }
 .item-ct{
-    width: calc(100%  - 180px);
+    width: 100px;
     position: relative;
     float: left;
 }
@@ -85,7 +85,7 @@ ul li{
     margin: 0;
     padding-bottom: 20px;
 }
-.tk-btn-submit{
+#tk-btn-submit{
     border-radius: 1px;
     background-color: blue;
     width: 180px;

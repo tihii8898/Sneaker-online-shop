@@ -56,63 +56,96 @@
                     <div class="item-head-right">
                         <label>Thông tin khách hàng</label>
                     </div>
+                    <form>
                     <div class="item-body-right">
                     <div class="property">
-                        <label>Họ Tên</label>
+                        <label for="fullName">Họ Tên</label>
                         <div class="item-ct">
-                            <input type="text" class="input-text">
+                            <input type="text" class="input-text" id="fullName" name="fullName">
                         </div>
                     </div>
                     <div class="property">
-                        <label>Số điện thoại</label>
+                        <label for="number">Số điện thoại</label>
                         <div class="item-ct">
-                            <input type="text" class="input-text">
+                            <input type="text" class="input-text" id="number" name="number">
                         </div>
                     </div>
                     <div class="property">
-                        <label>Giới tính</label>
+                        <label for="sex">Giới tính</label>
                         <div class="item-ct">
-                            <input type="text" class="input-text">
+                            <input type="text" class="input-text" id="sex" name="sex">
                         </div>
                     </div>
                     <div class="property">
-                        <label>Email</label>
+                        <label for="email">Email</label>
                         <div class="item-ct">
-                            <input type="text" class="input-text">
+                            <input type="text" class="input-text" id="email" name="email">
                         </div>
                     </div>
                     <div class="property">
-                        <label>Địa chỉ</label>
+                        <label for="address">Địa chỉ</label>
                         <div class="item-ct">
-                            <input type="text" class="input-text">
+                            <input type="text" class="input-text" id="address" name="address">
                         </div>
                     </div>
                     <div class="property">
                         <label></label>
-                        <div class="item-ct">
-                            <a href="#" type="submit" class="tk-btn-submit">Chỉnh sửa thông tin</a>
-                        </div>
+                        <button class="item-ct" id="tk-btn-submit" type="submit">
+                            Chỉnh sửa thông tin
+                        </button>
                     </div>
                 </div>
+                </form>
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="container">
-                <div class="box 1">
-                    <em>Hỗ trợ khách hàng</em><br>
-                    <em>Chính sách vận chuyển</em>
+        <footer class="site-footer">
+            <div class="container-footer">
+              <div class="row">
+                <div class="about">
+                  <h6>About</h6>
+                  <p class="text-justify"></p>
                 </div>
-                <div class="box 2">
-                    <em>Địa chỉ</em><br>
-                    <em>123</em><br>
-                    <em>456</em>
+        
+                <div class="category">
+                  <h6>Categories</h6>
+                  <ul class="footer-links">
+                    <li><a href="http://scanfcode.com/category/c-language/">Men's shoes</a></li>
+                    <li><a href="http://scanfcode.com/category/front-end-development/">Women's shoes</a></li>
+                    <li><a href="http://scanfcode.com/category/back-end-development/">Children'shoes</a></li>
+                  </ul>
                 </div>
-                <div class="box 3">
-                   <img src="download.png">
+        
+                <div class="quick">
+                  <h6>Quick Links</h6>
+                  <ul class="footer-links">
+                    <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                    <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                    <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                    <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                  </ul>
                 </div>
+              </div>
+              <hr>
+              <div class="under">
+                <div class="copy">
+                  <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+               <a href="#">Scanfcode</a>.
+                  </p>
+                </div>
+        
+                <div class="social">
+                  <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                  </ul>
+                </div>
+              </div>
             </div>
-            
         </footer>
+        <script src="infor.js"></script>
     </body>
 </html>
