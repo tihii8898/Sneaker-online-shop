@@ -17,6 +17,177 @@ html {
     display: flex;
     justify-content: space-between;
     flex-flow: row;
+    & .product-edit-form{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.25);
+        z-index: 5;
+        & .form {
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            height: 500px;
+            width: 350px;
+            background: #fff;
+            // padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            & .title {
+                text-align: center;
+                padding: 10px;
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            & .pr-code {
+                margin: 10px;
+                #pr-code {
+                    cursor: pointer;
+                    color: #03a9f4;
+                }
+            }
+            
+            & .pr-name {
+                margin: 10px;
+                #pr-name {
+                    cursor: pointer;
+                    color: #03a9f4;
+                    // line-height: 3rem;
+                    width: 80%;
+                }
+            }
+            & .pr-price {
+                margin: 10px;
+                #pr-price {
+                    cursor: pointer;
+                    color: #03a9f4;
+                    // line-height: 3rem;
+                    
+                }
+            }
+            & .pr-dayRelease {
+                margin: 10px;
+                #pr-dayRelease {
+                    cursor: pointer;
+                    color: #03a9f4;
+                }
+            }
+            & .pr-status {
+                margin: 10px;
+                #pr-status {
+                    cursor: pointer;
+                    color: #03a9f4;
+                }
+            }
+            & .pr-selling {
+                margin: 10px;
+                & #pr-selling {
+                    cursor: pointer;
+                    color: #03a9f4;
+                }
+
+                & input {
+                    cursor: pointer;
+                }
+            }
+
+            & .button {
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                justify-content: space-around;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 10px;
+                & .save {
+                    padding: 16px 42px;
+                    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+                    line-height: 1.25;
+                    background: #71DFE7;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16px;
+                    letter-spacing: .08em;
+                    text-transform: uppercase;
+                    position: relative;
+                    transition: background-color .6s ease;
+                    overflow: hidden;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        top: 50%;
+                        left: 50%;
+                        top: var(--mouse-y);
+                        left: var(--mouse-x);
+                        transform-style: flat;
+                        transform: translate3d(-50%,-50%,0);
+                        background: rgba(white,.1);
+                        border-radius: 100%;
+                        transition: width .3s ease, height .3s ease;
+                    }
+                    &:focus,
+                    &:hover {
+                        background: darken(#71DFE7,7%);
+                        color: black;
+                    }
+                    &:active {
+                        &:after {
+                        width: 300px;
+                        height: 300px;
+                        }
+                    }
+                }
+
+                & .exit {
+                    padding: 16px 42px;
+                    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+                    line-height: 1.25;
+                    background: #71DFE7;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16px;
+                    letter-spacing: .08em;
+                    text-transform: uppercase;
+                    position: relative;
+                    transition: background-color .6s ease;
+                    overflow: hidden;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        top: 50%;
+                        left: 50%;
+                        top: var(--mouse-y);
+                        left: var(--mouse-x);
+                        transform-style: flat;
+                        transform: translate3d(-50%,-50%,0);
+                        background: rgba(white,.1);
+                        border-radius: 100%;
+                        transition: width .3s ease, height .3s ease;
+                    }
+                    &:focus,
+                    &:hover {
+                        background: darken(#71DFE7,7%);
+                        color: black;
+                    }
+                    &:active {
+                        &:after {
+                        width: 300px;
+                        height: 300px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
     & .nav {
         
         position: fixed;
@@ -343,16 +514,7 @@ html {
 
                 }
 
-                & .product-edit-form{ 
-                    position: absolute;
-                    top:50%;
-                    left: 50%;
-                    height: 100px;
-                    width: 100px;
-                    &open{
-
-                    }
-                }
+               
 
                 
 

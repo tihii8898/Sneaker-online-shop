@@ -59,48 +59,58 @@ var products = [
     {   
         code:'DSMH06301DEN',
         name: 'Giày Thể Thao Nam Biti’s Hunter X Z MIDNIGHT BLACK MID - TOP DSMH06301DEN (Đen)',
-        dayRelease: '20-11-2021',
+        dayRelease: new Date(2021,10,25,0,0,0,0),
         inStorage: 30,
         waiting:false,
         amount:10000000,
         selling:true,
+        price: 1999000,
+        
     },
     {
         code:'DSMH03801XDG',
         name: 'Giày Bóng Đá Nam Biti\'s Hunter Football DSMH03801XDG (Xanh Dương)',
-        dayRelease: '1-11-2021',
+        dayRelease: new Date(2021,11,20,0,0,0,0),
         inStorage: 0,
         waiting:false,
         amount:650000,
         selling:true,
+        price: 699000,
+        
     },
     {
         code:'DSWH06400XDG',
         name: 'Giày Thể Thao Nữ Biti’s Hunter Core Z Collection Sea DSWH06400XDG (Xanh Dương)',
-        dayRelease: '22-10-2021',
+        dayRelease: new Date(2021,11,18,0,0,0,0),
         inStorage: 0,
         waiting:true,
         amount:699000,
         selling:true,
+        price: 1099000,
         
     },
     {
         code:'DEM010400DEN',
         name: 'Dép Eva Phun Nam Biti\'s DEM010400DEN (Đen)',
-        dayRelease: '18-11-2021',
+        dayRelease:new Date(2021,10,20,0,0,0,0),
         inStorage: 300,
         waiting:false,
         amount:99000,
         selling:false,
+        price: 199000,
+        
     },
     {
         code:'DSWH08400NAU',
         name: 'Giày Thể Thao Nữ Biti\'s Hunter Street x VietMax | Bloomin\' Central (1 ĐÔI GIÀY - 3 BIẾN THỂ) DSWH08400NAU (Phiên bản giới hạn Đồng xu cổ cho 999 đơn hàng đầu tiên)',
-        dayRelease: '30-10-2021',
+        dayRelease: new Date(2021,10,30),
         inStorage: 90,
         waiting:false,
         amount:1999000,
         selling:true,
+        price:1999000,
+        
+        
     }
 
 ]
@@ -131,7 +141,7 @@ const tableRow = (item) => {
     nameRow.classList.add('tr-name')
 
     //release
-    let releaseText = document.createTextNode(item.dayRelease)
+    let releaseText = document.createTextNode(item.dayRelease.toDateString())
     releaseRow.appendChild(releaseText)
     releaseRow.classList.add('tr-release')
 
@@ -191,9 +201,80 @@ function productEdit() {
     a.forEach(item => { 
         form.classList.remove(item.innerHTML)
     })
-
-    form.classList.add('open',this.innerText)
     
+    let thisProduct = {}
+    products.forEach(product => {
+       if( product.code === this.innerHTML) {
+           thisProduct = product
+       }
+    })
+    form.style.display = 'block'
+    let thisCode = form.children[0].children[1]
+    let thisName = form.children[0].children[2]
+    let thisPrice = form.children[0].children[3]
+    let thisRelease = form.children[0].children[4]
+    let thisStatus = form.children[0].children[5]
+    let thisSelling = form.children[0].children[6]
+    let thisButton = form.children[0].children[7]
+    
+
+    let codeInput = thisCode.children[1]
+    let nameInput = thisName.children[1]
+    let priceInput = thisPrice.children[1]
+    let releaseInput = thisRelease.children[1]
+    let statusInput = thisStatus.children[1]
+    let sellingInput = thisSelling.children[1]
+    codeInput.placeholder = thisProduct.code
+    nameInput.placeholder = thisProduct.name
+    priceInput.placeholder = thisProduct.price
+    releaseInput.innerHTML = thisProduct.dayRelease.toDateString()
+    if (thisProduct.waiting) {
+        statusInput.innerText = 'Chờ hàng'
+        statusInput.style.color = '#a68b00'
+    }
+    else if (thisProduct.inStorage > 0) {
+        statusInput.innerText = 'Còn hàng'
+        statusInput.style.color = '#388e3c'
+    }
+    else {
+        statusInput.innerText = 'Hết hàng'
+        statusInput.style.color = '#c62828'
+    }
+
+    if (thisProduct.selling) {
+        sellingInput.checked = 'checked'
+    }
+    
+    let saveBtn = thisButton.children[0]
+    let exitBtn = thisButton.children[1]
+
+    const changeProductInfo = () => {
+        products.forEach(product => {
+            if (product.code === thisProduct.code){
+                product.code = codeInput.value
+                product.name = nameInput.value
+                product.price = priceInput.value
+
+                codeInput.value = ''
+                nameInput.value = ''
+                priceInput.value = ''
+            }
+            
+        })
+
+        form.style.display = 'none'
+    }
+
+    saveBtn.addEventListener('click',changeProductInfo)
+
+    
+    const exit = () => {
+        form.style.display = 'none'
+    }
+    exitBtn.addEventListener('click',exit)
+
+
+
 
 }
 
@@ -201,3 +282,7 @@ a.forEach(item =>
     item.addEventListener('click',productEdit)
     
     )
+
+
+let b = new Date(2021,10,10,0,0,0,0)
+console.log(b)

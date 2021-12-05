@@ -14,6 +14,160 @@ html {
   justify-content: space-between;
   flex-flow: row;
 }
+.container .product-edit-form {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 5;
+}
+.container .product-edit-form .form {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  height: 500px;
+  width: 350px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container .product-edit-form .form .title {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.container .product-edit-form .form .pr-code {
+  margin: 10px;
+}
+.container .product-edit-form .form .pr-code #pr-code {
+  cursor: pointer;
+  color: #03a9f4;
+}
+.container .product-edit-form .form .pr-name {
+  margin: 10px;
+}
+.container .product-edit-form .form .pr-name #pr-name {
+  cursor: pointer;
+  color: #03a9f4;
+  width: 80%;
+}
+.container .product-edit-form .form .pr-price {
+  margin: 10px;
+}
+.container .product-edit-form .form .pr-price #pr-price {
+  cursor: pointer;
+  color: #03a9f4;
+}
+.container .product-edit-form .form .pr-dayRelease {
+  margin: 10px;
+}
+.container .product-edit-form .form .pr-dayRelease #pr-dayRelease {
+  cursor: pointer;
+  color: #03a9f4;
+}
+.container .product-edit-form .form .pr-status {
+  margin: 10px;
+}
+.container .product-edit-form .form .pr-status #pr-status {
+  cursor: pointer;
+  color: #03a9f4;
+}
+.container .product-edit-form .form .pr-selling {
+  margin: 10px;
+}
+.container .product-edit-form .form .pr-selling #pr-selling {
+  cursor: pointer;
+  color: #03a9f4;
+}
+.container .product-edit-form .form .pr-selling input {
+  cursor: pointer;
+}
+.container .product-edit-form .form .button {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+.container .product-edit-form .form .button .save {
+  padding: 16px 42px;
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  line-height: 1.25;
+  background: #71DFE7;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color 0.6s ease;
+  overflow: hidden;
+}
+.container .product-edit-form .form .button .save:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  top: var(--mouse-y);
+  left: var(--mouse-x);
+  transform-style: flat;
+  transform: translate3d(-50%, -50%, 0);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.container .product-edit-form .form .button .save:focus, .container .product-edit-form .form .button .save:hover {
+  background: #52d8e2;
+  color: black;
+}
+.container .product-edit-form .form .button .save:active:after {
+  width: 300px;
+  height: 300px;
+}
+.container .product-edit-form .form .button .exit {
+  padding: 16px 42px;
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
+  line-height: 1.25;
+  background: #71DFE7;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color 0.6s ease;
+  overflow: hidden;
+}
+.container .product-edit-form .form .button .exit:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  top: var(--mouse-y);
+  left: var(--mouse-x);
+  transform-style: flat;
+  transform: translate3d(-50%, -50%, 0);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.container .product-edit-form .form .button .exit:focus, .container .product-edit-form .form .button .exit:hover {
+  background: #52d8e2;
+  color: black;
+}
+.container .product-edit-form .form .button .exit:active:after {
+  width: 300px;
+  height: 300px;
+}
 .container .nav {
   position: fixed;
   width: 300px;
@@ -296,13 +450,6 @@ html {
 .container .nav-info .product.open #table .status-waiting {
   background-color: #fff0c2;
   color: #a68b00;
-}
-.container .nav-info .product.open .product-edit-form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 100px;
-  width: 100px;
 }
 .container .nav-info .order {
   height: 100px;
