@@ -26,6 +26,7 @@ body{
     height: 500px;
     padding: 2rem;
     border-radius: 5px;
+    margin-top: 100px;
 }
 .contact-wrapper .contact-heading{
     text-align: center;
@@ -126,6 +127,7 @@ i.fas.fa-comments {
         width: 70%;
         height: 500px;
         margin-top: 100px;
+        padding-top: 50px;
     }
     .submit-contact .submit-btn{
         width: 50%;
