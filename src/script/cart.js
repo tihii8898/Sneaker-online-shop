@@ -9,7 +9,6 @@ add_cart_btn.forEach(function(btn,index){
         var product_price = product.querySelector(".price").innerText;
         addCart (product_img,product_name,product_price);
     })
-    console.log('1')
 })
 
 function addCart(product_img,product_name,product_price){
@@ -22,6 +21,7 @@ function addCart(product_img,product_name,product_price){
             alert('sản phẩm đã có trong giỏ hàng của bạn')
             return
         }
+        
     }
     var tr_content ='<tr><td class="cart-img"><img src="'+product_img+'" alt=""><span class="product_title_cart">' +product_name+ '</span></td><td><p><span class="product_price">'+product_price+'</span></p></td><td><input type="number" value="1" min="0"></td><td><button class="delete_cart_btn">Xóa</button></td></tr>'
     add_Tr.innerHTML = tr_content
