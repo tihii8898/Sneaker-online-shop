@@ -34,6 +34,8 @@ function addCart(product_img,product_name,product_price){
 // -------------------------totalPrice--------------------------
 function cart_total(){
     var cart_Item = document.querySelectorAll(".body_of_Cart tr");
+    // console.log(cart_Item)
+    console.log(1)
     var totalPrice = 0
     for (var i = 0;i < cart_Item.length; i++ ){
         var input_value = (cart_Item[i].querySelector('input').value);
